@@ -237,22 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 2000);
     }
 
-    // Torn photo hover effects
-    const tornPhotos = document.querySelectorAll('.torn-photo');
-    tornPhotos.forEach(photo => {
-        photo.addEventListener('mouseenter', function() {
-            this.style.transform = `rotate(${Math.random() * 20 - 10}deg) scale(1.1)`;
-            this.style.zIndex = '100';
-            this.style.boxShadow = '5px 5px 20px rgba(255, 255, 255, 0.3)';
-        });
-        
-        photo.addEventListener('mouseleave', function() {
-            const originalRotation = this.style.getPropertyValue('--photo-rotation') || '0deg';
-            this.style.transform = `rotate(${originalRotation}) scale(1)`;
-            this.style.zIndex = '10';
-            this.style.boxShadow = '3px 3px 10px rgba(255, 255, 255, 0.2)';
-        });
-    });
+    // Torn photo hover effects - removed to prevent size and tilt changes
 
 
     // Eye tracking effect
@@ -347,11 +332,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'images/Photos/Picture4.png'
         ],
         photo2: [
-            'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=200&fit=crop&crop=face',
-            'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300&h=200&fit=crop&crop=face',
-            'https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop&crop=face',
-            'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=300&h=200&fit=crop&crop=face',
-            'https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop&crop=face'
+            'images/Photos/Picture1.png',
+            'images/Photos/Picture2.png',
+            'images/Photos/Picture3.png',
+            'images/Photos/Picture4.png'
         ]
     };
 
