@@ -111,16 +111,16 @@ document.addEventListener('DOMContentLoaded', function() {
             // Handle navigation to different pages
             switch(section) {
                 case 'about':
-                    window.location.href = 'about.html';
+                    window.location.href = 'html/about.html';
                     break;
                 case 'work':
-                    window.location.href = 'work.html';
+                    window.location.href = 'html/work.html';
                     break;
                 case 'resume':
-                    window.location.href = 'resume.html';
+                    window.location.href = 'html/resume.html';
                     break;
                 case 'contact':
-                    window.location.href = 'contact.html';
+                    window.location.href = 'html/contact.html';
                     break;
                 default:
                     // Stay on current page for home
