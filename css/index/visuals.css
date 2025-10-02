@@ -1,0 +1,188 @@
+.film-camera {
+    width: 60px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+    position: relative;
+    transform: rotate(5deg);
+}
+
+.film-camera::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    border-radius: 50%;
+}
+
+.film-camera::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    background: #000000;
+    border-radius: 2px;
+}
+
+.nunchaku {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.handle {
+    width: 30px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: 4px;
+    position: relative;
+}
+
+.chain {
+    width: 2px;
+    height: 20px;
+    background: #ffffff;
+    margin: 5px auto;
+}
+
+.spiked-ball {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.spiked-ball::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 8px solid #ffffff;
+}
+
+.skull {
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    margin: 20px auto;
+}
+
+.skull::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    width: 6px;
+    height: 6px;
+    background: #000000;
+    border-radius: 50%;
+}
+
+.skull::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    width: 6px;
+    height: 6px;
+    background: #000000;
+    border-radius: 50%;
+}
+
+.eye-photo {
+    width: 25px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 15px auto;
+    position: relative;
+}
+
+.eye-photo::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: #000000;
+    border-radius: 50%;
+}
+
+.teeth {
+    width: 40px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 0 0 20px 20px;
+    margin: 15px auto;
+    position: relative;
+}
+
+.teeth::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: repeating-linear-gradient(
+        90deg,
+        #000000 0px,
+        #000000 2px,
+        transparent 2px,
+        transparent 4px
+    );
+}
+
+.grit-logo-small {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 20px;
+    transform: rotate(-5deg);
+}
+
+.clapperboard {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ffffff;
+    color: #000000;
+    padding: 10px;
+    border-radius: 4px;
+    transform: rotate(5deg);
+    z-index: 6;
+}
+
+.clapper-top {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.clapper-bottom {
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+.clapper-handwritten {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 5px;
+    transform: rotate(-2deg);
+}

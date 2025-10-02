@@ -1,0 +1,31 @@
+/* Responsive Design for new pages */
+@media (max-width: 768px) {
+    .story-grid, .project-grid, .partnerships-grid, .endurance-grid, .resume-grid, .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .training-stats, .metrics, .coaching-stats {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .skills-grid, .badges-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .topics-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}

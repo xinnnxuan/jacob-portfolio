@@ -1,0 +1,209 @@
+/* Background Elements */
+.background-elements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #fff, transparent),
+        radial-gradient(2px 2px at 40px 70px, #fff, transparent),
+        radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+        radial-gradient(1px 1px at 130px 80px, #fff, transparent),
+        radial-gradient(2px 2px at 160px 30px, #fff, transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    opacity: 0.3;
+}
+
+.spiderweb {
+    position: absolute;
+    border: 1px solid #ffffff;
+    opacity: 0.2;
+}
+
+.spiderweb-1 {
+    top: 10%;
+    left: 15%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: dashed;
+}
+
+.spiderweb-2 {
+    top: 60%;
+    right: 20%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-style: dashed;
+}
+
+.spiderweb-3 {
+    bottom: 20%;
+    left: 30%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-style: dashed;
+}
+
+.grit-logo-large {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.grit-logo-large::after {
+    content: '⚡';
+    position: absolute;
+    right: -30px;
+    top: 0;
+    font-size: 36px;
+}
+
+.cloud-with-eye {
+    position: relative;
+    margin-top: 30px;
+}
+
+.cloud {
+    width: 80px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.cloud::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: -25px;
+    left: 10px;
+}
+
+.cloud::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: -20px;
+    right: 10px;
+}
+
+.eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 12px;
+    background: #000000;
+    border-radius: 50%;
+}
+
+.pupil {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.tears {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tear {
+    width: 2px;
+    height: 8px;
+    background: #ffffff;
+    margin: 2px auto;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.lightning-bolts {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lightning {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 20px solid #ffffff;
+    margin: 5px auto;
+    position: relative;
+}
+
+.lightning::after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -4px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 10px solid #ffffff;
+}
+
+.ufo {
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: 20px;
+}
+
+.ufo-1 {
+    left: 100px;
+    top: 10px;
+}
+
+.ufo-2 {
+    left: 120px;
+    top: 30px;
+    width: 20px;
+    height: 10px;
+}
+
+.ufo::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: 50%;
+}
