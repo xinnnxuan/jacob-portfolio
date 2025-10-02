@@ -36,11 +36,6 @@
     left: 25%;
 }
 
-.graphic-4 {
-    --graphic-rotation: 12deg;
-    top: 15%;
-    left: 60%;
-}
 
 
 .graphic-6 {
@@ -108,6 +103,8 @@
     transition: all 0.3s ease;
     mix-blend-mode: multiply;
     background: transparent;
+    /* Remove white backgrounds by making them blend with dark background */
+    opacity: 0.95;
 }
 
 .torn-graphic:hover .graphic-image {
