@@ -350,6 +350,65 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 100);
         }
     }, 2000);
+
+    // Image rotation functionality
+    const imageSets = {
+        photo1: [
+            'IMG_8706.jpg',
+            'IMG_0988.jpg',
+            'IMG_8705.jpg'
+        ],
+        photo2: [
+            'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=200&fit=crop&crop=face',
+            'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300&h=200&fit=crop&crop=face',
+            'https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop&crop=face',
+            'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=300&h=200&fit=crop&crop=face',
+            'https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop&crop=face'
+        ]
+    };
+
+    let currentImageIndex = {
+        photo1: 0,
+        photo2: 0
+    };
+
+    function rotateImages() {
+        const photo1Img = document.querySelector('.photo-1 .rotating-image');
+        const photo2Img = document.querySelector('.photo-2 .rotating-image');
+        
+        if (photo1Img) {
+            // Fade out current image
+            photo1Img.classList.add('fade-out');
+            
+            setTimeout(() => {
+                // Update to next image
+                currentImageIndex.photo1 = (currentImageIndex.photo1 + 1) % imageSets.photo1.length;
+                photo1Img.src = imageSets.photo1[currentImageIndex.photo1];
+                photo1Img.alt = `Jacob - Personal photo ${currentImageIndex.photo1 + 1}`;
+                
+                // Fade in new image
+                photo1Img.classList.remove('fade-out');
+            }, 500);
+        }
+        
+        if (photo2Img) {
+            // Fade out current image
+            photo2Img.classList.add('fade-out');
+            
+            setTimeout(() => {
+                // Update to next image
+                currentImageIndex.photo2 = (currentImageIndex.photo2 + 1) % imageSets.photo2.length;
+                photo2Img.src = imageSets.photo2[currentImageIndex.photo2];
+                photo2Img.alt = `Team collaboration ${currentImageIndex.photo2 + 1}`;
+                
+                // Fade in new image
+                photo2Img.classList.remove('fade-out');
+            }, 500);
+        }
+    }
+
+    // Start image rotation every 2 seconds
+    setInterval(rotateImages, 2000);
 });
 
 // Utility functions for the gritty experience
