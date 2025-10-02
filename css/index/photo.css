@@ -76,6 +76,7 @@
     position: relative;
     z-index: 4;
     mix-blend-mode: normal;
+    background: transparent;
 }
 
 .rotating-image.fade-out {

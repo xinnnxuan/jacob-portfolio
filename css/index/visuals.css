@@ -139,13 +139,11 @@
     left: 0;
     right: 0;
     height: 8px;
-    background: repeating-linear-gradient(
-        90deg,
-        #000000 0px,
-        #000000 2px,
-        transparent 2px,
-        transparent 4px
-    );
+    background: repeating-linear-gradient(90deg,
+            #000000 0px,
+            #000000 2px,
+            transparent 2px,
+            transparent 4px);
 }
 
 .grit-logo-small {
@@ -157,32 +155,3 @@
     transform: rotate(-5deg);
 }
 
-.clapperboard {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: #ffffff;
-    color: #000000;
-    padding: 10px;
-    border-radius: 4px;
-    transform: rotate(5deg);
-    z-index: 6;
-}
-
-.clapper-top {
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.clapper-bottom {
-    font-size: 10px;
-    margin-top: 2px;
-}
-
-.clapper-handwritten {
-    font-size: 12px;
-    font-style: italic;
-    margin-top: 5px;
-    transform: rotate(-2deg);
-}

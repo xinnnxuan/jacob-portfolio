@@ -106,6 +106,8 @@
     object-fit: cover;
     filter: grayscale(100%) contrast(1.2);
     transition: all 0.3s ease;
+    mix-blend-mode: multiply;
+    background: transparent;
 }
 
 .torn-graphic:hover .graphic-image {

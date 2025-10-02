@@ -34,15 +34,6 @@
         font-size: 18px;
     }
     
-    .torn-paper-container {
-        width: 300px;
-        height: 150px;
-    }
-    
-    .torn-paper {
-        font-size: 10px;
-        padding: 6px 8px;
-    }
     
     .top-left, .top-right, .center-right {
         position: relative;
@@ -55,11 +46,6 @@
         margin: 40px 20px;
     }
     
-    .bottom-section {
-        position: relative;
-        transform: none;
-        margin: 40px 20px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -71,10 +57,6 @@
         font-size: 14px;
     }
     
-    .torn-paper-container {
-        width: 250px;
-        height: 120px;
-    }
     
     .grit-logo-large {
         font-size: 32px;

@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Camera lens effect
-    const cameras = document.querySelectorAll('.film-camera, .main-camera');
+    const cameras = document.querySelectorAll('.film-camera');
     cameras.forEach(camera => {
         camera.addEventListener('mouseenter', function() {
             const lens = this.querySelector('::before') || this;
@@ -254,22 +254,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Clapperboard click effect
-    const clapperboard = document.querySelector('.clapperboard');
-    if (clapperboard) {
-        clapperboard.addEventListener('click', function() {
-            this.style.animation = 'shake 0.4s ease-in-out';
-            setTimeout(() => {
-                this.style.animation = '';
-                // Change the text temporarily
-                const originalText = this.innerHTML;
-                this.innerHTML = '<div class="clapper-top">ACTION!</div><div class="clapper-bottom">ROLLING</div>';
-                setTimeout(() => {
-                    this.innerHTML = originalText;
-                }, 1000);
-            }, 400);
-        });
-    }
 
     // Eye tracking effect
     const eyes = document.querySelectorAll('.eye, .eye-photo');
