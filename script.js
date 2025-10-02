@@ -64,15 +64,76 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Menu button interaction
     const menuButton = document.querySelector('.menu-button');
-    if (menuButton) {
+    const navMenu = document.getElementById('navMenu');
+    const navClose = document.getElementById('navClose');
+    
+    if (menuButton && navMenu) {
         menuButton.addEventListener('click', function() {
             this.style.animation = 'shake 0.5s ease-in-out';
             setTimeout(() => {
                 this.style.animation = '';
-                alert('Menu clicked! (This would open a navigation menu)');
+                navMenu.classList.add('active');
             }, 500);
         });
     }
+    
+    // Close menu functionality
+    if (navClose && navMenu) {
+        navClose.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+        });
+    }
+    
+    // Close menu when clicking outside
+    if (navMenu) {
+        navMenu.addEventListener('click', function(e) {
+            if (e.target === navMenu) {
+                navMenu.classList.remove('active');
+            }
+        });
+    }
+    
+    // Navigation button interactions
+    const navButtons = document.querySelectorAll('.nav-button');
+    navButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const section = this.getAttribute('data-section');
+            
+            // Add click animation
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+            
+            // Close menu
+            navMenu.classList.remove('active');
+            
+            // Handle navigation (you can customize this based on your needs)
+            switch(section) {
+                case 'about':
+                    alert('About section clicked! (This would scroll to about section)');
+                    break;
+                case 'work':
+                    alert('Work section clicked! (This would scroll to work section)');
+                    break;
+                case 'resume':
+                    alert('Resume section clicked! (This would open resume or scroll to resume)');
+                    break;
+                case 'contact':
+                    alert('Contact section clicked! (This would scroll to contact section)');
+                    break;
+            }
+        });
+        
+        // Add hover effects
+        button.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-2px) scale(1.02)';
+        });
+        
+        button.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
 
     // Lightning effect on cloud
     const lightningBolts = document.querySelectorAll('.lightning');
