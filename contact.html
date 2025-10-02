@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jacob Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="background-elements">
+        <div class="stars"></div>
+        <div class="spiderweb spiderweb-1"></div>
+        <div class="spiderweb spiderweb-2"></div>
+        <div class="spiderweb spiderweb-3"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="navMenu">
+        <div class="nav-container">
+            <div class="nav-button" data-section="about">
+                <div class="nav-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        <circle cx="9" cy="7" r="1" fill="currentColor"></circle>
+                        <circle cx="15" cy="7" r="1" fill="currentColor"></circle>
+                        <circle cx="12" cy="7" r="1" fill="currentColor"></circle>
+                    </svg>
+                </div>
+                <span class="nav-text">About</span>
+                <div class="nav-arrow">›</div>
+            </div>
+            
+            <div class="nav-button" data-section="work">
+                <div class="nav-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                        <circle cx="12" cy="10" r="3"></circle>
+                        <circle cx="6" cy="6" r="1" fill="currentColor"></circle>
+                        <circle cx="18" cy="6" r="1" fill="currentColor"></circle>
+                    </svg>
+                </div>
+                <span class="nav-text">Work</span>
+                <div class="nav-arrow">›</div>
+            </div>
+            
+            <div class="nav-button" data-section="resume">
+                <div class="nav-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M8 12h8"></path>
+                        <path d="M12 8v8"></path>
+                        <circle cx="12" cy="12" r="2"></circle>
+                        <circle cx="12" cy="12" r="6" fill="none" stroke-width="1"></circle>
+                        <circle cx="12" cy="12" r="4" fill="none" stroke-width="1"></circle>
+                    </svg>
+                </div>
+                <span class="nav-text">Resume</span>
+                <div class="nav-arrow">›</div>
+            </div>
+            
+            <div class="nav-button" data-section="contact">
+                <div class="nav-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
+                        <circle cx="12" cy="12" r="6" fill="none" stroke-width="1"></circle>
+                    </svg>
+                </div>
+                <span class="nav-text">Contact</span>
+                <div class="nav-arrow">›</div>
+            </div>
+            
+            <div class="nav-close" id="navClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="contact-content">
+                <h1 class="contact-title">💬 Let's Connect</h1>
+                <div class="contact-subtitle">Want to talk marketing, Ironman, or brand strategy? Reach out!</div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="form-container">
+                        <h2>Send Me a Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a topic</option>
+                                    <option value="marketing">Marketing & Brand Strategy</option>
+                                    <option value="coaching">Tennis Coaching</option>
+                                    <option value="endurance">Endurance Sports & Training</option>
+                                    <option value="collaboration">Collaboration Opportunity</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project, question, or just say hello!"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info-container">
+                        <h2>Get in Touch</h2>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p>jacob.r.spence@gmail.com</p>
+                                    <a href="mailto:jacob.r.spence@gmail.com" class="contact-link">Send Email</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h3>Location</h3>
+                                    <p>Spokane, Washington</p>
+                                    <p>Available for remote work</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">⏰</div>
+                                <div class="contact-details">
+                                    <h3>Response Time</h3>
+                                    <p>Usually within 24 hours</p>
+                                    <p>Faster during training season!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="social-section">
+                            <h3>Follow My Journey</h3>
+                            <div class="social-links">
+                                <a href="https://linkedin.com/in/jacobspence" class="social-link" target="_blank">
+                                    <div class="social-icon">💼</div>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://strava.com/athletes/jacobspence" class="social-link" target="_blank">
+                                    <div class="social-icon">🏃‍♂️</div>
+                                    <span>Strava</span>
+                                </a>
+                                <a href="https://instagram.com/jacobspence" class="social-link" target="_blank">
+                                    <div class="social-icon">📸</div>
+                                    <span>Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topics Section -->
+        <section class="topics-section">
+            <div class="container">
+                <h2>What We Can Talk About</h2>
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <div class="topic-icon">🎯</div>
+                        <h3>Marketing Strategy</h3>
+                        <p>Brand development, digital campaigns, social media strategy, and retail marketing</p>
+                    </div>
+                    
+                    <div class="topic-card">
+                        <div class="topic-icon">🎾</div>
+                        <h3>Tennis Coaching</h3>
+                        <p>Individual lessons, group training, technique improvement, and competitive preparation</p>
+                    </div>
+                    
+                    <div class="topic-card">
+                        <div class="topic-icon">🏊‍♂️</div>
+                        <h3>Endurance Sports</h3>
+                        <p>Ironman training, race strategy, gear reviews, and mental preparation techniques</p>
+                    </div>
+                    
+                    <div class="topic-card">
+                        <div class="topic-icon">🤝</div>
+                        <h3>Brand Partnerships</h3>
+                        <p>Collaboration opportunities, content creation, and authentic brand storytelling</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Something Great?</h2>
+                    <p>Whether you're looking for marketing expertise, tennis coaching, or just want to chat about endurance sports, I'd love to hear from you!</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:jacob.r.spence@gmail.com" class="cta-btn primary">Send Email</a>
+                        <a href="resume.html" class="cta-btn secondary">View Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

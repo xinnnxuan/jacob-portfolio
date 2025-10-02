@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Jacob Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="background-elements">
+        <div class="stars"></div>
+        <div class="spiderweb spiderweb-1"></div>
+        <div class="spiderweb spiderweb-2"></div>
+        <div class="spiderweb spiderweb-3"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="navMenu">
+        <div class="nav-container">
+            <div class="nav-button" data-section="about">
+                <div class="nav-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        <circle cx="9" cy="7" r="1" fill="currentColor"></circle>
+                        <circle cx="15" cy="7" r="1" fill="currentColor"></circle>
+                        <circle cx="12" cy="7" r="1" fill="currentColor"></circle>
+                    </svg>
+                </div>
+                <span class="nav-text">About</span>
+                <div class="nav-arrow">›</div>
+            </div>
+            
+            <div class="nav-button" data-section="work">
+                <div class="nav-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                        <circle cx="12" cy="10" r="3"></circle>
+                        <circle cx="6" cy="6" r="1" fill="currentColor"></circle>
+                        <circle cx="18" cy="6" r="1" fill="currentColor"></circle>
+                    </svg>
+                </div>
+                <span class="nav-text">Work</span>
+                <div class="nav-arrow">›</div>
+            </div>
+            
+            <div class="nav-button" data-section="resume">
+                <div class="nav-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M8 12h8"></path>
+                        <path d="M12 8v8"></path>
+                        <circle cx="12" cy="12" r="2"></circle>
+                        <circle cx="12" cy="12" r="6" fill="none" stroke-width="1"></circle>
+                        <circle cx="12" cy="12" r="4" fill="none" stroke-width="1"></circle>
+                    </svg>
+                </div>
+                <span class="nav-text">Resume</span>
+                <div class="nav-arrow">›</div>
+            </div>
+            
+            <div class="nav-button" data-section="contact">
+                <div class="nav-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
+                        <circle cx="12" cy="12" r="6" fill="none" stroke-width="1"></circle>
+                    </svg>
+                </div>
+                <span class="nav-text">Contact</span>
+                <div class="nav-arrow">›</div>
+            </div>
+            
+            <div class="nav-close" id="navClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Hero Section -->
+        <section class="resume-hero">
+            <div class="resume-content">
+                <h1 class="resume-title">Professional Summary</h1>
+                <div class="resume-subtitle">Marketing Professional & Endurance Athlete</div>
+                <a href="resume.pdf" class="download-btn" download>📄 Download PDF Resume</a>
+            </div>
+        </section>
+
+        <!-- Resume Content -->
+        <section class="resume-main">
+            <div class="container">
+                <div class="resume-grid">
+                    <!-- Left Column -->
+                    <div class="resume-left">
+                        <!-- Contact Info -->
+                        <div class="resume-section">
+                            <h2>Contact Information</h2>
+                            <div class="contact-info">
+                                <p><strong>Email:</strong> jacob.r.spence@gmail.com</p>
+                                <p><strong>Location:</strong> Spokane, WA</p>
+                                <p><strong>LinkedIn:</strong> linkedin.com/in/jacobspence</p>
+                                <p><strong>Strava:</strong> strava.com/athletes/jacobspence</p>
+                            </div>
+                        </div>
+
+                        <!-- Skills -->
+                        <div class="resume-section">
+                            <h2>Core Competencies</h2>
+                            <div class="skills-list">
+                                <h3>Marketing & Strategy</h3>
+                                <ul>
+                                    <li>Brand Development & Management</li>
+                                    <li>Digital Marketing Campaigns</li>
+                                    <li>Social Media Strategy</li>
+                                    <li>Content Creation & Curation</li>
+                                    <li>Market Research & Analysis</li>
+                                </ul>
+                                
+                                <h3>Retail & Operations</h3>
+                                <ul>
+                                    <li>Visual Merchandising</li>
+                                    <li>Inventory Management</li>
+                                    <li>Customer Relationship Management</li>
+                                    <li>Event Planning & Execution</li>
+                                    <li>Sales Performance Optimization</li>
+                                </ul>
+                                
+                                <h3>Technical Skills</h3>
+                                <ul>
+                                    <li>Adobe Creative Suite</li>
+                                    <li>Canva Pro</li>
+                                    <li>POS Systems</li>
+                                    <li>Google Analytics</li>
+                                    <li>Social Media Platforms</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Athletic Achievements -->
+                        <div class="resume-section">
+                            <h2>Athletic & Outdoor Experience</h2>
+                            <div class="athletic-achievements">
+                                <h3>Endurance Sports</h3>
+                                <ul>
+                                    <li>Ironman Triathlon Competitor</li>
+                                    <li>Marathon Runner (Multiple Finishes)</li>
+                                    <li>Cycling Enthusiast (100+ mile rides)</li>
+                                    <li>Open Water Swimming</li>
+                                </ul>
+                                
+                                <h3>Coaching & Leadership</h3>
+                                <ul>
+                                    <li>15+ Years Tennis Coaching Experience</li>
+                                    <li>High School & Club Level Coaching</li>
+                                    <li>Individual & Group Instruction</li>
+                                    <li>Performance Improvement Focus</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="resume-right">
+                        <!-- Professional Experience -->
+                        <div class="resume-section">
+                            <h2>Professional Experience</h2>
+                            
+                            <div class="experience-item">
+                                <h3>Marketing Coordinator</h3>
+                                <div class="company">Spokane Racquet Club</div>
+                                <div class="duration">2020 - Present</div>
+                                <ul>
+                                    <li>Developed and executed comprehensive marketing campaigns resulting in 52% YoY revenue growth</li>
+                                    <li>Created visual merchandising strategies that increased member engagement by 38%</li>
+                                    <li>Managed social media presence across multiple platforms, growing follower base by 67%</li>
+                                    <li>Designed event marketing materials and promotional content using Adobe Creative Suite and Canva</li>
+                                    <li>Collaborated with brand partners including Wilson Sporting Goods and Luxilon Strings</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-item">
+                                <h3>Retail Operations Manager</h3>
+                                <div class="company">Outdoor Sports Retail</div>
+                                <div class="duration">2014 - 2020</div>
+                                <ul>
+                                    <li>Oversaw daily retail operations and staff management</li>
+                                    <li>Implemented inventory management systems improving efficiency by 25%</li>
+                                    <li>Developed customer service protocols increasing satisfaction scores by 40%</li>
+                                    <li>Created visual merchandising displays that boosted sales by 30%</li>
+                                    <li>Managed POS systems and trained staff on new technologies</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-item">
+                                <h3>Tennis Coach</h3>
+                                <div class="company">Various Clubs & High Schools</div>
+                                <div class="duration">2008 - Present</div>
+                                <ul>
+                                    <li>Coached 50+ students across various skill levels</li>
+                                    <li>Achieved 85% success rate in helping students reach their goals</li>
+                                    <li>Developed training programs for competitive and recreational players</li>
+                                    <li>Mentored high school athletes to state tournament qualification</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="resume-section">
+                            <h2>Education</h2>
+                            <div class="education-item">
+                                <h3>Master's Degree in Marketing</h3>
+                                <div class="institution">Current Program</div>
+                                <div class="duration">2020 - Present</div>
+                                <p>Advanced studies in digital marketing, brand strategy, and consumer behavior</p>
+                            </div>
+                            
+                            <div class="education-item">
+                                <h3>Bachelor's Degree</h3>
+                                <div class="institution">University</div>
+                                <div class="duration">2010 - 2014</div>
+                                <p>Foundation in business and marketing principles</p>
+                            </div>
+                        </div>
+
+                        <!-- Certifications -->
+                        <div class="resume-section">
+                            <h2>Certifications & Training</h2>
+                            <ul>
+                                <li>Google Analytics Certified</li>
+                                <li>Social Media Marketing Certification</li>
+                                <li>USPTA Tennis Teaching Professional</li>
+                                <li>First Aid & CPR Certified</li>
+                                <li>Adobe Creative Suite Proficiency</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill Badges Section -->
+        <section class="badges-section">
+            <div class="container">
+                <h2>Technical Proficiency</h2>
+                <div class="badges-grid">
+                    <div class="badge-item">
+                        <div class="badge-icon">🎨</div>
+                        <div class="badge-name">Adobe Creative</div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-icon">📱</div>
+                        <div class="badge-name">Canva Pro</div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-icon">📊</div>
+                        <div class="badge-name">Google Analytics</div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-icon">💳</div>
+                        <div class="badge-name">POS Systems</div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-icon">📱</div>
+                        <div class="badge-name">Social Media</div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-icon">📧</div>
+                        <div class="badge-name">Email Marketing</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -108,19 +108,22 @@ document.addEventListener('DOMContentLoaded', function() {
             // Close menu
             navMenu.classList.remove('active');
             
-            // Handle navigation (you can customize this based on your needs)
+            // Handle navigation to different pages
             switch(section) {
                 case 'about':
-                    alert('About section clicked! (This would scroll to about section)');
+                    window.location.href = 'about.html';
                     break;
                 case 'work':
-                    alert('Work section clicked! (This would scroll to work section)');
+                    window.location.href = 'work.html';
                     break;
                 case 'resume':
-                    alert('Resume section clicked! (This would open resume or scroll to resume)');
+                    window.location.href = 'resume.html';
                     break;
                 case 'contact':
-                    alert('Contact section clicked! (This would scroll to contact section)');
+                    window.location.href = 'contact.html';
+                    break;
+                default:
+                    // Stay on current page for home
                     break;
             }
         });
@@ -482,3 +485,39 @@ setInterval(() => {
         gritUtils.createParticle();
     }
 }, 2000);
+
+// Contact form handling
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Simple validation
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all fields.');
+                return;
+            }
+            
+            // Create mailto link
+            const mailtoLink = `mailto:jacob.r.spence@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('Thank you for your message! Your email client should open with a pre-filled message. If it doesn\'t, please email jacob.r.spence@gmail.com directly.');
+            
+            // Reset form
+            contactForm.reset();
+        });
+    }
+});
