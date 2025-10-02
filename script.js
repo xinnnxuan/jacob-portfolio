@@ -354,9 +354,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Image rotation functionality
     const imageSets = {
         photo1: [
-            'IMG_8706.jpg',
-            'IMG_0988.jpg',
-            'IMG_8705.jpg'
+            'Photos/IMG_8706.jpg',
+            'Photos/IMG_0988.jpg',
+            'Photos/IMG_8705.jpg'
         ],
         photo2: [
             'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=200&fit=crop&crop=face',
@@ -409,6 +409,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Start image rotation every 2 seconds
     setInterval(rotateImages, 2000);
+
+    // Graphics interaction
+    const tornGraphics = document.querySelectorAll('.torn-graphic');
+    tornGraphics.forEach(graphic => {
+        graphic.addEventListener('mouseenter', function() {
+            this.style.transform = `rotate(${Math.random() * 20 - 10}deg) scale(1.1)`;
+            this.style.zIndex = '100';
+            this.style.boxShadow = '4px 4px 15px rgba(255, 255, 255, 0.5)';
+        });
+        
+        graphic.addEventListener('mouseleave', function() {
+            const originalRotation = this.style.getPropertyValue('--graphic-rotation') || '0deg';
+            this.style.transform = `rotate(${originalRotation}) scale(1)`;
+            this.style.zIndex = '5';
+            this.style.boxShadow = '2px 2px 8px rgba(255, 255, 255, 0.3)';
+        });
+
+        // Add click interaction
+        graphic.addEventListener('click', function() {
+            this.style.animation = 'shake 0.3s ease-in-out';
+            setTimeout(() => {
+                this.style.animation = '';
+            }, 300);
+        });
+    });
 });
 
 // Utility functions for the gritty experience
