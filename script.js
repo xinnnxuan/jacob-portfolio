@@ -356,7 +356,8 @@ document.addEventListener('DOMContentLoaded', function() {
         photo1: [
             'Photos/IMG_8706.jpg',
             'Photos/IMG_0988.jpg',
-            'Photos/IMG_8705.jpg'
+            'Photos/IMG_8705.jpg',
+            'Photos/IMG_8707.jpg'
         ],
         photo2: [
             'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=200&fit=crop&crop=face',
