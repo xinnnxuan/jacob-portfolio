@@ -880,6 +880,36 @@ body {
     left: 40%; 
 }
 
+.graphic-7 { 
+    --graphic-rotation: -12deg; 
+    top: 45%; 
+    left: 5%; 
+}
+
+.graphic-8 { 
+    --graphic-rotation: 15deg; 
+    bottom: 15%; 
+    left: 60%; 
+}
+
+.graphic-9 { 
+    --graphic-rotation: -6deg; 
+    top: 70%; 
+    right: 30%; 
+}
+
+.graphic-10 { 
+    --graphic-rotation: 9deg; 
+    top: 5%; 
+    left: 30%; 
+}
+
+.graphic-11 { 
+    --graphic-rotation: -18deg; 
+    bottom: 5%; 
+    right: 5%; 
+}
+
 .torn-graphic::before {
     content: '';
     position: absolute;
