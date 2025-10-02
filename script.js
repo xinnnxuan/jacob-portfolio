@@ -357,10 +357,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Image rotation functionality
     const imageSets = {
         photo1: [
-            'Photos/IMG_8706.jpg',
-            'Photos/IMG_0988.jpg',
-            'Photos/IMG_8705.jpg',
-            'Photos/IMG_8707.jpg'
+            'Photos/Picture1.png',
+            'Photos/Picture2.png',
+            'Photos/Picture3.png',
+            'Photos/Picture4.png'
         ],
         photo2: [
             'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=200&fit=crop&crop=face',

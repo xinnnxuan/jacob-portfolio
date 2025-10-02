@@ -752,7 +752,7 @@ body {
     transform: rotate(var(--photo-rotation));
     box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.2);
     border-radius: 4px;
-    background-image: url('IMG_8711.jpg');
+    background-image: url('background/IMG_8711.JPG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -770,6 +770,8 @@ body {
     height: 100%;
     overflow: hidden;
     border-radius: 4px;
+    background: transparent;
+    z-index: 2;
 }
 
 .rotating-image {
@@ -777,6 +779,9 @@ body {
     height: 100%;
     object-fit: cover;
     transition: opacity 0.5s ease-in-out;
+    position: relative;
+    z-index: 3;
+    mix-blend-mode: normal;
     border-radius: 4px;
 }
 
@@ -1245,6 +1250,24 @@ body {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 3;
+}
+
+.story-image, .project-visual, .training-photos {
+    position: relative;
+    background-image: url('background/IMG_8711.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.story-image img, .project-visual img, .training-photos img {
+    position: relative;
+    z-index: 2;
+    mix-blend-mode: normal;
 }
 
 .training-photos {
@@ -1252,10 +1275,20 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 30px;
+    position: relative;
+    background-image: url('background/IMG_8711.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .training-photo {
     height: 200px;
+    position: relative;
+    z-index: 2;
+    mix-blend-mode: normal;
 }
 
 .training-stats, .metrics, .coaching-stats {
