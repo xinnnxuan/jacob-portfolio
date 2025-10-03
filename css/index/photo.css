@@ -97,10 +97,6 @@
     background: transparent;
 }
 
-.rotating-image.fade-out {
-    opacity: 0;
-}
-
 /* Hide background during photo transitions */
 .photo-content.transitioning .torn-photo::after {
     opacity: 0;

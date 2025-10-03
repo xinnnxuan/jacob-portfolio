@@ -351,37 +351,33 @@ document.addEventListener('DOMContentLoaded', function() {
         const photo2Content = document.querySelector('.photo-2 .photo-content');
         
         if (photo1Img && photo1Content) {
-            // Hide background and fade out current image
+            // Hide background during transition
             photo1Content.classList.add('transitioning');
-            photo1Img.classList.add('fade-out');
             
+            // Update to next image instantly
+            currentImageIndex.photo1 = (currentImageIndex.photo1 + 1) % imageSets.photo1.length;
+            photo1Img.src = imageSets.photo1[currentImageIndex.photo1];
+            photo1Img.alt = `Jacob - Personal photo ${currentImageIndex.photo1 + 1}`;
+            
+            // Show background after image loads
             setTimeout(() => {
-                // Update to next image
-                currentImageIndex.photo1 = (currentImageIndex.photo1 + 1) % imageSets.photo1.length;
-                photo1Img.src = imageSets.photo1[currentImageIndex.photo1];
-                photo1Img.alt = `Jacob - Personal photo ${currentImageIndex.photo1 + 1}`;
-                
-                // Fade in new image and show background
-                photo1Img.classList.remove('fade-out');
                 photo1Content.classList.remove('transitioning');
-            }, 500);
+            }, 100);
         }
         
         if (photo2Img && photo2Content) {
-            // Hide background and fade out current image
+            // Hide background during transition
             photo2Content.classList.add('transitioning');
-            photo2Img.classList.add('fade-out');
             
+            // Update to next image instantly
+            currentImageIndex.photo2 = (currentImageIndex.photo2 + 1) % imageSets.photo2.length;
+            photo2Img.src = imageSets.photo2[currentImageIndex.photo2];
+            photo2Img.alt = `Team collaboration ${currentImageIndex.photo2 + 1}`;
+            
+            // Show background after image loads
             setTimeout(() => {
-                // Update to next image
-                currentImageIndex.photo2 = (currentImageIndex.photo2 + 1) % imageSets.photo2.length;
-                photo2Img.src = imageSets.photo2[currentImageIndex.photo2];
-                photo2Img.alt = `Team collaboration ${currentImageIndex.photo2 + 1}`;
-                
-                // Fade in new image and show background
-                photo2Img.classList.remove('fade-out');
                 photo2Content.classList.remove('transitioning');
-            }, 500);
+            }, 100);
         }
     }
 
