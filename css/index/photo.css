@@ -1,18 +1,18 @@
 /* Photo Elements */
-.photo-left,
-.photo-right {
-    position: absolute;
-    z-index: 10;
-}
-
 .photo-left {
-    bottom: calc(-3% * var(--clamped-scale));
-    left: calc(8% * var(--clamped-scale));
+    grid-area: bottom-left;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 .photo-right {
-    bottom: calc(15% * var(--clamped-scale));
-    right: calc(8% * var(--clamped-scale));
+    grid-area: bottom-right;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .torn-photo {
@@ -23,21 +23,13 @@
 }
 
 .photo-right .torn-photo {
-    width: calc(22vw * var(--clamped-scale));
-    height: calc(16vw * var(--clamped-scale));
-    min-width: calc(300px * var(--clamped-scale));
-    min-height: calc(220px * var(--clamped-scale));
-    max-width: calc(450px * var(--clamped-scale));
-    max-height: calc(330px * var(--clamped-scale));
+    width: clamp(200px, 22vw, 450px);
+    height: clamp(150px, 16vw, 330px);
 }
 
 .photo-left .torn-photo {
-    width: calc(28vw * var(--clamped-scale));
-    height: calc(20vw * var(--clamped-scale));
-    min-width: calc(400px * var(--clamped-scale));
-    min-height: calc(280px * var(--clamped-scale));
-    max-width: calc(550px * var(--clamped-scale));
-    max-height: calc(400px * var(--clamped-scale));
+    width: clamp(250px, 28vw, 550px);
+    height: clamp(180px, 20vw, 400px);
 }
 
 .torn-photo::after {
@@ -53,13 +45,13 @@
 .photo-left .torn-photo::after {
     background-image: url('../../images/background/left.png');
     transform: rotate(180deg);
-    inset: calc(-150px * var(--clamped-scale));
+    inset: clamp(-80px, -8vw, -150px);
 }
 
 .photo-right .torn-photo::after {
     background-image: url('../../images/background/right.png');
     transform: rotate(3deg);
-    inset: calc(-80px * var(--clamped-scale));
+    inset: clamp(-40px, -4vw, -80px);
 }
 
 .photo-1 { --photo-rotation: -8deg; }
@@ -75,16 +67,16 @@
 
 /* Left photo content */
 .photo-left .photo-content {
-    inset: calc(-70px * var(--clamped-scale));
-    width: calc(100% + 130px * var(--clamped-scale));
-    height: calc(100% + 130px * var(--clamped-scale));
+    inset: clamp(-35px, -3.5vw, -70px);
+    width: calc(100% + clamp(70px, 7vw, 130px));
+    height: calc(100% + clamp(70px, 7vw, 130px));
 }
 
 /* Right photo content - bigger */
 .photo-right .photo-content {
-    inset: calc(-30px * var(--clamped-scale));
-    width: calc(100% + 60px * var(--clamped-scale));
-    height: calc(100% + 60px * var(--clamped-scale));
+    inset: clamp(-15px, -1.5vw, -30px);
+    width: calc(100% + clamp(30px, 3vw, 60px));
+    height: calc(100% + clamp(30px, 3vw, 60px));
 }
 
 .rotating-image {

@@ -4,64 +4,73 @@
     width: 100%;
     min-height: 100vh;
     z-index: 2;
-    transform: scale(var(--clamped-scale));
-    transform-origin: top left;
-    width: calc(100% / var(--clamped-scale));
-    height: calc(100vh / var(--clamped-scale));
+    display: grid;
+    grid-template-areas: 
+        "top-left top-right"
+        "center center"
+        "bottom-left bottom-right";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 2rem;
+    padding: 2rem;
 }
 
 /* Top Left Elements */
 .top-left {
-    position: absolute;
-    top: calc(5% * var(--clamped-scale));
-    left: calc(5% * var(--clamped-scale));
+    grid-area: top-left;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .center-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    grid-area: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     z-index: 10;
 }
 
 /* Top Right Elements */
 .top-right {
-    position: absolute;
-    top: calc(5% * var(--clamped-scale));
-    right: calc(5% * var(--clamped-scale));
+    grid-area: top-right;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .menu-button {
     background: #ffffff;
     color: #000000;
-    padding: calc(0.5vw * var(--clamped-scale)) calc(1vw * var(--clamped-scale));
+    padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 2vw, 2rem);
     font-weight: 400;
-    font-size: calc(1.2vw * var(--clamped-scale));
-    letter-spacing: calc(0.1vw * var(--clamped-scale));
+    font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+    letter-spacing: 0.1em;
     border: none;
-    margin-bottom: calc(1.5vh * var(--clamped-scale));
+    margin-bottom: 1rem;
     position: relative;
     transform: rotate(-2deg);
     font-family: 'Kalam', cursive, 'Inter', sans-serif;
     cursor: pointer;
-    width: calc(5vw * var(--clamped-scale));
-    height: calc(2.5vw * var(--clamped-scale));
-    min-width: calc(60px * var(--clamped-scale));
-    min-height: calc(30px * var(--clamped-scale));
-    max-width: calc(100px * var(--clamped-scale));
-    max-height: calc(50px * var(--clamped-scale));
+    width: clamp(60px, 8vw, 120px);
+    height: clamp(30px, 4vw, 60px);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: calc(0.3vw * var(--clamped-scale));
+    border-radius: 0.3rem;
     background-image: url('../../images/background/right.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+.menu-button:hover {
+    transform: rotate(-2deg) scale(1.05);
 }
 
 /* Center Right Elements */

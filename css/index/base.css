@@ -1,19 +1,21 @@
 /* Reset and Base Styles */
-:root {
-    /* Base scale factor for 13" MacBook Air (1440px width) */
-    --base-width: 1440;
-    --scale-factor: calc(100vw / var(--base-width));
-    --min-scale: 0.5;
-    --max-scale: 2;
-    
-    /* Clamp scale factor between min and max */
-    --clamped-scale: clamp(var(--min-scale), var(--scale-factor), var(--max-scale));
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    /* Responsive scaling variables */
+    --base-scale: 1;
+    --responsive-scale: clamp(0.5, 1vw, 1.5);
+    --clamped-scale: var(--responsive-scale);
+    
+    /* Breakpoints */
+    --mobile: 480px;
+    --tablet: 768px;
+    --laptop: 1024px;
+    --desktop: 1440px;
 }
 
 html, body {
