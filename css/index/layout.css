@@ -9,8 +9,8 @@
 /* Top Left Elements */
 .top-left {
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 50px;
+    left: 50px;
     z-index: 10;
 }
 
@@ -26,34 +26,30 @@
 /* Top Right Elements */
 .top-right {
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top: 50px;
+    right: 50px;
     z-index: 10;
 }
 
 .menu-button {
     background: #ffffff;
     color: #000000;
-    padding: 0.5vw 1vw;
+    padding: 8px 16px;
     font-weight: 400;
-    font-size: 1.2vw;
-    letter-spacing: 0.1vw;
+    font-size: 19px;
+    letter-spacing: 2px;
     border: none;
-    margin-bottom: 1.5vh;
+    margin-bottom: 25px;
     position: relative;
     transform: rotate(-2deg);
     font-family: 'Kalam', cursive, 'Inter', sans-serif;
     cursor: pointer;
-    width: 5vw;
-    height: 2.5vw;
-    min-width: 60px;
-    min-height: 30px;
-    max-width: 100px;
-    max-height: 50px;
+    width: 80px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.3vw;
+    border-radius: 5px;
     background-image: url('IMG_8712.jpg');
     background-size: cover;
     background-position: center;
@@ -63,7 +59,7 @@
 /* Center Right Elements */
 .center-right {
     position: absolute;
-    top: 40%;
-    right: 10%;
+    top: 400px;
+    right: 100px;
     z-index: 10;
 }

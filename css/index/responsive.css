@@ -1,6 +1,6 @@
-/* Responsive Design */
+/* Responsive Design - DISABLED for fixed layout */
 
-/* Ensure minimum sizes for very small screens */
+/* 
 @media (max-width: 320px) {
     .torn-photo {
         min-width: 150px !important;
@@ -84,3 +84,4 @@
         font-size: 32px;
     }
 }
+*/
