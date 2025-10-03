@@ -49,16 +49,76 @@
     height: clamp(5vw, 20vw, 100vw);
 }
 
-/* Responsive Photo Sizing */
-@media (max-width: 1024px) {
+/* Comprehensive Responsive Photo Testing */
+@media (min-width: 1440px) {
     .photo-right .torn-photo {
-        width: clamp(180px, 20vw, 400px);
-        height: clamp(130px, 14vw, 300px);
+        width: clamp(4vw, 22vw, 88vw);
+        height: clamp(3vw, 16vw, 64vw);
     }
     
     .photo-left .torn-photo {
-        width: clamp(220px, 25vw, 500px);
-        height: clamp(160px, 18vw, 360px);
+        width: clamp(5vw, 28vw, 112vw);
+        height: clamp(3.5vw, 20vw, 80vw);
+    }
+}
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .photo-right .torn-photo {
+        width: clamp(5.5vw, 22vw, 110vw);
+        height: clamp(4vw, 16vw, 80vw);
+    }
+    
+    .photo-left .torn-photo {
+        width: clamp(7vw, 28vw, 140vw);
+        height: clamp(5vw, 20vw, 100vw);
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 769px) {
+    .photo-right .torn-photo {
+        width: clamp(6vw, 24vw, 120vw);
+        height: clamp(4.5vw, 18vw, 90vw);
+    }
+    
+    .photo-left .torn-photo {
+        width: clamp(8vw, 32vw, 160vw);
+        height: clamp(6vw, 24vw, 120vw);
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-right .torn-photo {
+        width: clamp(150px, 30vw, 300px);
+        height: clamp(110px, 22vw, 220px);
+    }
+    
+    .photo-left .torn-photo {
+        width: clamp(180px, 35vw, 350px);
+        height: clamp(130px, 25vw, 250px);
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-right .torn-photo {
+        width: clamp(120px, 40vw, 250px);
+        height: clamp(90px, 30vw, 180px);
+    }
+    
+    .photo-left .torn-photo {
+        width: clamp(140px, 45vw, 280px);
+        height: clamp(100px, 32vw, 200px);
+    }
+}
+
+@media (max-width: 320px) {
+    .photo-right .torn-photo {
+        width: clamp(100px, 50vw, 200px);
+        height: clamp(75px, 37.5vw, 150px);
+    }
+    
+    .photo-left .torn-photo {
+        width: clamp(120px, 60vw, 240px);
+        height: clamp(85px, 42.5vw, 170px);
     }
 }
 
