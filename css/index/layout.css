@@ -1,36 +1,49 @@
-/* Main Container - Flex Layout */
+/* Main Container - CSS Grid Layout */
 .main-container {
     position: relative;
     width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+        "top-left center top-right"
+        "center-left center center-right"
+        "center-left center center-right"
+        "bottom-left center bottom-right";
+    gap: 2vh 2vw;
+    padding: 2vh 2vw;
     z-index: 2;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
 /* Top Left Elements */
 .top-left {
-    position: absolute;
-    top: 5vh;
-    left: 5vw;
+    grid-area: top-left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     z-index: 10;
 }
 
 .center-content {
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
+    grid-area: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     z-index: 10;
 }
 
 /* Top Right Elements */
 .top-right {
-    position: absolute;
-    top: 5vh;
-    right: 5vw;
+    grid-area: top-right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
     z-index: 10;
 }
 
@@ -65,8 +78,30 @@
 
 /* Center Right Elements */
 .center-right {
-    position: absolute;
-    top: 40vh;
-    right: 10vw;
+    grid-area: center-right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* Bottom Left Elements */
+.bottom-left {
+    grid-area: bottom-left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 10;
+}
+
+/* Bottom Right Elements */
+.bottom-right {
+    grid-area: bottom-right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
     z-index: 10;
 }

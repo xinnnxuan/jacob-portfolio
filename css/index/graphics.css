@@ -1,16 +1,22 @@
 /* Graphics Container */
 .graphics-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     pointer-events: none;
     z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 2vw;
+    box-sizing: border-box;
 }
 
 .torn-graphic {
-    position: absolute;
+    position: relative;
     width: 4vw;
     height: 3vh;
     min-width: 60px;
@@ -19,12 +25,11 @@
     max-height: 150px;
     background: transparent;
     transform: rotate(var(--graphic-rotation));
+    margin: 1vh 1vw;
 }
 
 .graphic-1 {
     --graphic-rotation: -15deg;
-    top: 25vh;
-    left: 15vw;
     width: 6vw;
     height: 4.5vh;
     min-width: 80px;
@@ -35,8 +40,6 @@
 
 .graphic-2 {
     --graphic-rotation: 8deg;
-    top: 35vh;
-    right: 20vw;
     width: 5.5vw;
     height: 4vh;
     min-width: 70px;
@@ -47,8 +50,6 @@
 
 .graphic-3 {
     --graphic-rotation: -5deg;
-    bottom: 25vh;
-    left: 25vw;
     width: 6.5vw;
     height: 4.8vh;
     min-width: 90px;
@@ -59,8 +60,6 @@
 
 .graphic-6 {
     --graphic-rotation: 6deg;
-    top: 60vh;
-    left: 40vw;
     width: 5.3vw;
     height: 3.8vh;
     min-width: 70px;
@@ -71,8 +70,6 @@
 
 .graphic-7 {
     --graphic-rotation: -12deg;
-    top: 45vh;
-    left: 5vw;
     width: 7vw;
     height: 5vh;
     min-width: 100px;
@@ -83,8 +80,6 @@
 
 .graphic-8 {
     --graphic-rotation: 15deg;
-    bottom: 15vh;
-    left: 60vw;
     width: 5.8vw;
     height: 4.3vh;
     min-width: 80px;
@@ -95,8 +90,6 @@
 
 .graphic-9 {
     --graphic-rotation: -6deg;
-    top: 70vh;
-    right: 30vw;
     width: 6.3vw;
     height: 4.5vh;
     min-width: 85px;
@@ -107,8 +100,6 @@
 
 .graphic-10 {
     --graphic-rotation: 9deg;
-    top: 5vh;
-    left: 30vw;
     width: 5vw;
     height: 3.5vh;
     min-width: 60px;
@@ -119,8 +110,6 @@
 
 .graphic-11 {
     --graphic-rotation: -18deg;
-    bottom: 5vh;
-    right: 5vw;
     width: 6.8vw;
     height: 5vh;
     min-width: 90px;
