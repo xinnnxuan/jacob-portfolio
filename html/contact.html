@@ -13,66 +13,74 @@
     <link rel="stylesheet" href="../css/index/graphics.css">
     <link rel="stylesheet" href="../css/index/visuals.css">
     <link rel="stylesheet" href="../css/index/photo.css">
+    <link rel="stylesheet" href="../css/index/leo_constellation.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Leo Constellation Night Sky -->
+    <div class="leo-night-sky">
+        <svg class="leo-constellation" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet">
+            <!-- Leo Constellation Lines -->
+            <g class="leo-lines">
+                <!-- Head and mane -->
+                <path d="M200,300 L250,280 L300,320 L350,300 L400,280" />
+                <!-- Body -->
+                <path d="M400,280 L450,350 L500,400 L550,450 L600,500" />
+                <!-- Tail -->
+                <path d="M600,500 L650,480 L700,460 L750,440 L800,420" />
+                <!-- Hind legs -->
+                <path d="M550,450 L580,520 L600,550" />
+                <path d="M600,500 L620,570 L640,600" />
+                <!-- Front legs -->
+                <path d="M400,280 L420,350 L440,380" />
+                <path d="M350,300 L370,370 L390,400" />
+            </g>
+            
+            <!-- Leo Constellation Stars -->
+            <g class="leo-stars">
+                <!-- Regulus (Alpha Leonis) - brightest star -->
+                <circle cx="400" cy="280" r="3" class="leo-regulus" />
+                <!-- Algieba (Gamma Leonis) -->
+                <circle cx="350" cy="300" r="2.5" class="leo-main-stars" />
+                <!-- Denebola (Beta Leonis) -->
+                <circle cx="600" cy="500" r="2.5" class="leo-main-stars" />
+                <!-- Zosma (Delta Leonis) -->
+                <circle cx="550" cy="450" r="2" class="leo-main-stars" />
+                <!-- Chertan (Theta Leonis) -->
+                <circle cx="500" cy="400" r="2" class="leo-main-stars" />
+                <!-- Adhafera (Zeta Leonis) -->
+                <circle cx="450" cy="350" r="2" class="leo-main-stars" />
+                <!-- Rasalas (Mu Leonis) -->
+                <circle cx="300" cy="320" r="2" class="leo-main-stars" />
+                <!-- Al Minliar al Asad (Kappa Leonis) -->
+                <circle cx="250" cy="280" r="1.5" class="leo-stars" />
+                <!-- Head stars -->
+                <circle cx="200" cy="300" r="1.5" class="leo-stars" />
+                <!-- Tail stars -->
+                <circle cx="650" cy="480" r="1.5" class="leo-stars" />
+                <circle cx="700" cy="460" r="1.5" class="leo-stars" />
+                <circle cx="750" cy="440" r="1.5" class="leo-stars" />
+                <circle cx="800" cy="420" r="1.5" class="leo-stars" />
+                <!-- Leg stars -->
+                <circle cx="420" cy="350" r="1" class="leo-stars" />
+                <circle cx="440" cy="380" r="1" class="leo-stars" />
+                <circle cx="370" cy="370" r="1" class="leo-stars" />
+                <circle cx="390" cy="400" r="1" class="leo-stars" />
+                <circle cx="580" cy="520" r="1" class="leo-stars" />
+                <circle cx="600" cy="550" r="1" class="leo-stars" />
+                <circle cx="620" cy="570" r="1" class="leo-stars" />
+                <circle cx="640" cy="600" r="1" class="leo-stars" />
+            </g>
+        </svg>
+        <div class="leo-overlay"></div>
+    </div>
+    
     <!-- Background Elements -->
     <div class="background-elements">
         <div class="stars"></div>
         <div class="spiderweb spiderweb-1"></div>
         <div class="spiderweb spiderweb-2"></div>
         <div class="spiderweb spiderweb-3"></div>
-        
-        <!-- Leo Constellation -->
-        <div class="leo-constellation">
-            <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
-                <!-- Leo constellation lines -->
-                <g class="leo-lines">
-                    <!-- Lion's head and mane -->
-                    <path d="M15,25 L20,20 L25,25 L30,20 L35,25 L40,20 L45,25 L50,20 L55,25 L60,20 L65,25 L70,20 L75,25 L80,20 L85,25 L90,20 L95,25" />
-                    
-                    <!-- Lion's body outline -->
-                    <path d="M20,30 L25,35 L30,40 L35,45 L40,50 L45,55 L50,60 L55,65 L60,70 L65,75 L70,80 L75,85 L80,90" />
-                    
-                    <!-- Lion's tail -->
-                    <path d="M75,85 Q80,80 Q85,75 Q90,70 Q95,65" />
-                    
-                    <!-- Lion's legs -->
-                    <path d="M25,35 L20,40 L15,45" />
-                    <path d="M35,45 L30,50 L25,55" />
-                    <path d="M55,65 L60,70 L65,75" />
-                    <path d="M65,75 L70,80 L75,85" />
-                </g>
-                
-                <!-- Leo constellation stars -->
-                <g class="leo-stars">
-                    <!-- Regulus (Alpha Leonis) - brightest star -->
-                    <circle cx="20" cy="25" r="1.5" />
-                    <!-- Algieba (Gamma Leonis) -->
-                    <circle cx="35" cy="30" r="1" />
-                    <!-- Denebola (Beta Leonis) -->
-                    <circle cx="80" cy="30" r="1.2" />
-                    <!-- Zosma (Delta Leonis) -->
-                    <circle cx="70" cy="40" r="0.8" />
-                    <!-- Chort (Theta Leonis) -->
-                    <circle cx="50" cy="35" r="0.9" />
-                    <!-- Adhafera (Zeta Leonis) -->
-                    <circle cx="60" cy="25" r="0.7" />
-                    <!-- Rasalas (Mu Leonis) -->
-                    <circle cx="25" cy="40" r="0.6" />
-                    <!-- Al Minliar al Asad (Kappa Leonis) -->
-                    <circle cx="45" cy="45" r="0.5" />
-                    <!-- Subra (Omicron Leonis) -->
-                    <circle cx="55" cy="50" r="0.6" />
-                    <!-- Chertan (Chi Leonis) -->
-                    <circle cx="65" cy="55" r="0.5" />
-                    <!-- Zavijava (Eta Leonis) -->
-                    <circle cx="30" cy="50" r="0.4" />
-                    <!-- Alterf (Lambda Leonis) -->
-                    <circle cx="15" cy="35" r="0.5" />
-                </g>
-            </svg>
-        </div>
     </div>
 
     <!-- Navigation Menu -->
