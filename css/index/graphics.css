@@ -133,10 +133,12 @@
     object-fit: contain;
     transition: all 0.3s ease;
     background: transparent;
+    filter: contrast(1.3) brightness(1.2) saturate(0.7) drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+    mix-blend-mode: multiply;
 }
 
 .torn-graphic:hover .graphic-image {
-    filter: grayscale(0%) contrast(1.1);
+    filter: contrast(1.4) brightness(1.3) saturate(0.8) drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
     transform: scale(1.05);
 }
 

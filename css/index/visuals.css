@@ -9,6 +9,8 @@
     min-height: 38px;
     max-width: 120px;
     max-height: 83px;
+    filter: contrast(1.2) brightness(1.1) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    mix-blend-mode: multiply;
 }
 
 .film-camera::before {
@@ -44,6 +46,8 @@
     background: #ffffff;
     border-radius: 6px;
     position: relative;
+    filter: contrast(1.2) brightness(1.1) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    mix-blend-mode: multiply;
 }
 
 .chain {
@@ -51,6 +55,8 @@
     height: 30px;
     background: #ffffff;
     margin: 8px auto;
+    filter: contrast(1.2) brightness(1.1) drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
+    mix-blend-mode: multiply;
 }
 
 .spiked-ball {
@@ -60,6 +66,8 @@
     border-radius: 50%;
     position: relative;
     margin: 0 auto;
+    filter: contrast(1.2) brightness(1.1) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    mix-blend-mode: multiply;
 }
 
 .spiked-ball::before {
@@ -82,6 +90,8 @@
     border-radius: 50%;
     position: relative;
     margin: 30px auto;
+    filter: contrast(1.2) brightness(1.1) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    mix-blend-mode: multiply;
 }
 
 .skull::before {
@@ -113,6 +123,8 @@
     border-radius: 50%;
     margin: 23px auto;
     position: relative;
+    filter: contrast(1.2) brightness(1.1) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    mix-blend-mode: multiply;
 }
 
 .eye-photo::before {
@@ -134,6 +146,8 @@
     border-radius: 0 0 30px 30px;
     margin: 23px auto;
     position: relative;
+    filter: contrast(1.2) brightness(1.1) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    mix-blend-mode: multiply;
 }
 
 .teeth::before {
