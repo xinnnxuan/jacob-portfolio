@@ -326,10 +326,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Image rotation functionality
     const imageSets = {
         photo1: [
-            'images/Photos/Picture1.png',
             'images/Photos/Picture2.png',
             'images/Photos/Picture3.png',
-            'images/Photos/Picture4.png'
+            'images/Photos/Picture4.png',
+            'images/Photos/Picture1.png'
         ],
         photo2: [
             'images/Photos/Picture1.png',
@@ -347,9 +347,12 @@ document.addEventListener('DOMContentLoaded', function() {
     function rotateImages() {
         const photo1Img = document.querySelector('.photo-1 .rotating-image');
         const photo2Img = document.querySelector('.photo-2 .rotating-image');
+        const photo1Content = document.querySelector('.photo-1 .photo-content');
+        const photo2Content = document.querySelector('.photo-2 .photo-content');
         
-        if (photo1Img) {
-            // Fade out current image
+        if (photo1Img && photo1Content) {
+            // Hide background and fade out current image
+            photo1Content.classList.add('transitioning');
             photo1Img.classList.add('fade-out');
             
             setTimeout(() => {
@@ -358,13 +361,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 photo1Img.src = imageSets.photo1[currentImageIndex.photo1];
                 photo1Img.alt = `Jacob - Personal photo ${currentImageIndex.photo1 + 1}`;
                 
-                // Fade in new image
+                // Fade in new image and show background
                 photo1Img.classList.remove('fade-out');
+                photo1Content.classList.remove('transitioning');
             }, 500);
         }
         
-        if (photo2Img) {
-            // Fade out current image
+        if (photo2Img && photo2Content) {
+            // Hide background and fade out current image
+            photo2Content.classList.add('transitioning');
             photo2Img.classList.add('fade-out');
             
             setTimeout(() => {
@@ -373,8 +378,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 photo2Img.src = imageSets.photo2[currentImageIndex.photo2];
                 photo2Img.alt = `Team collaboration ${currentImageIndex.photo2 + 1}`;
                 
-                // Fade in new image
+                // Fade in new image and show background
                 photo2Img.classList.remove('fade-out');
+                photo2Content.classList.remove('transitioning');
             }, 500);
         }
     }

@@ -1,16 +1,18 @@
 /* Photo Elements */
-.photo-left {
+.photo-left,
+.photo-right {
     position: absolute;
-    bottom: 25%;
-    right: 5%;
     z-index: 10;
 }
 
+.photo-left {
+    bottom: -3%;
+    left: 8%;
+}
+
 .photo-right {
-    position: absolute;
-    bottom: -5%;
-    left: 15%;
-    z-index: 10;
+    bottom: 15%;
+    right: 8%;
 }
 
 .torn-photo {
@@ -20,51 +22,44 @@
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Left photo - smaller (switched from right) */
-.photo-left .torn-photo {
-    width: 15vw;
-    height: 11vw;
-    min-width: 200px;
-    min-height: 150px;
-    max-width: 300px;
-    max-height: 220px;
-}
-
-/* Right photo - larger (switched from left) */
 .photo-right .torn-photo {
-    width: 20vw;
-    height: 12vw;
+    width: 22vw;
+    height: 16vw;
     min-width: 300px;
-    min-height: 180px;
-    max-width: 400px;
-    max-height: 240px;
+    min-height: 220px;
+    max-width: 450px;
+    max-height: 330px;
 }
 
-/* White backing layer removed */
+.photo-left .torn-photo {
+    width: 28vw;
+    height: 20vw;
+    min-width: 400px;
+    min-height: 280px;
+    max-width: 550px;
+    max-height: 400px;
+}
 
 .torn-photo::after {
     content: '';
     position: absolute;
-    top: -30px;
-    left: -30px;
-    right: -30px;
-    bottom: -30px;
-    background-image: url('../../images/background/IMG_8711.JPG');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 2;
 }
 
-/* Left photo uses IMG_8712 background (switched from right) */
+/* Photo backgrounds */
 .photo-left .torn-photo::after {
-    background-image: url('../../images/background/IMG_8712.JPG');
+    background-image: url('../../images/background/left.png');
+    transform: rotate(180deg);
+    inset: -150px;
 }
 
-/* Right photo uses IMG_8711 background (switched from left) */
 .photo-right .torn-photo::after {
-    background-image: url('../../images/background/IMG_8711.JPG');
-    transform: rotate(90deg);
+    background-image: url('../../images/background/right.png');
+    transform: rotate(3deg);
+    inset: -80px;
 }
 
 .photo-1 { --photo-rotation: -8deg; }
@@ -73,13 +68,23 @@
 
 .photo-content {
     position: absolute;
-    top: -20px;
-    left: -20px;
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
     overflow: hidden;
     background: transparent;
     z-index: 3;
+}
+
+/* Left photo content */
+.photo-left .photo-content {
+    inset: -70px;
+    width: calc(100% + 130px);
+    height: calc(100% + 130px);
+}
+
+/* Right photo content - bigger */
+.photo-right .photo-content {
+    inset: -30px;
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
 }
 
 .rotating-image {
@@ -89,10 +94,21 @@
     transition: opacity 0.5s ease-in-out;
     position: relative;
     z-index: 4;
-    mix-blend-mode: normal;
     background: transparent;
 }
 
 .rotating-image.fade-out {
     opacity: 0;
+}
+
+/* Hide background during photo transitions */
+.photo-content.transitioning .torn-photo::after {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show background when not transitioning */
+.photo-content .torn-photo::after {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }
