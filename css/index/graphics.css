@@ -1,6 +1,6 @@
 /* Graphics Container */
 .graphics-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -9,10 +9,17 @@
     z-index: 5;
 }
 
+/* Responsive Graphics Container */
+@media (max-width: 768px) {
+    .graphics-container {
+        position: absolute;
+    }
+}
+
 .torn-graphic {
     position: absolute;
-    width: clamp(40px, 4vw, 80px);
-    height: clamp(30px, 3vw, 60px);
+    width: 60px;
+    height: 40px;
     background: transparent;
     transform: rotate(var(--graphic-rotation));
 }
@@ -25,68 +32,122 @@
     height: clamp(45px, 4.5vw, 120px);
 }
 
+/* Responsive Graphics Sizing */
+@media (max-width: 1024px) {
+    .graphic-1 {
+        width: clamp(50px, 5vw, 120px);
+        height: clamp(38px, 3.8vw, 95px);
+    }
+}
+
+@media (max-width: 768px) {
+    .graphic-1 {
+        width: clamp(40px, 8vw, 100px);
+        height: clamp(30px, 6vw, 75px);
+        top: 20%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .graphic-1 {
+        width: clamp(30px, 10vw, 80px);
+        height: clamp(23px, 7.5vw, 60px);
+        top: 15%;
+        left: 8%;
+    }
+}
+
 .graphic-2 {
     --graphic-rotation: 8deg;
     top: 35%;
     right: 20%;
-    width: clamp(55px, 5.5vw, 140px);
-    height: clamp(40px, 4vw, 100px);
+    width: clamp(50px, 5.5vw, 140px);
+    height: clamp(35px, 4vw, 100px);
 }
 
 .graphic-3 {
     --graphic-rotation: -5deg;
     bottom: 25%;
     left: 25%;
-    width: clamp(65px, 6.5vw, 160px);
-    height: clamp(48px, 4.8vw, 120px);
+    width: 6.5vw;
+    height: 4.8vw;
+    min-width: 90px;
+    min-height: 65px;
+    max-width: 160px;
+    max-height: 120px;
 }
 
 .graphic-6 {
     --graphic-rotation: 6deg;
     top: 60%;
     left: 40%;
-    width: clamp(53px, 5.3vw, 130px);
-    height: clamp(38px, 3.8vw, 95px);
+    width: 5.3vw;
+    height: 3.8vw;
+    min-width: 70px;
+    min-height: 50px;
+    max-width: 130px;
+    max-height: 95px;
 }
 
 .graphic-7 {
     --graphic-rotation: -12deg;
     top: 45%;
     left: 5%;
-    width: clamp(70px, 7vw, 180px);
-    height: clamp(50px, 5vw, 130px);
+    width: 7vw;
+    height: 5vw;
+    min-width: 100px;
+    min-height: 70px;
+    max-width: 180px;
+    max-height: 130px;
 }
 
 .graphic-8 {
     --graphic-rotation: 15deg;
     bottom: 15%;
     left: 60%;
-    width: clamp(58px, 5.8vw, 150px);
-    height: clamp(43px, 4.3vw, 110px);
+    width: 5.8vw;
+    height: 4.3vw;
+    min-width: 80px;
+    min-height: 60px;
+    max-width: 150px;
+    max-height: 110px;
 }
 
 .graphic-9 {
     --graphic-rotation: -6deg;
     top: 70%;
     right: 30%;
-    width: clamp(63px, 6.3vw, 160px);
-    height: clamp(45px, 4.5vw, 115px);
+    width: 6.3vw;
+    height: 4.5vw;
+    min-width: 85px;
+    min-height: 60px;
+    max-width: 160px;
+    max-height: 115px;
 }
 
 .graphic-10 {
     --graphic-rotation: 9deg;
     top: 5%;
     left: 30%;
-    width: clamp(50px, 5vw, 120px);
-    height: clamp(35px, 3.5vw, 85px);
+    width: 5vw;
+    height: 3.5vw;
+    min-width: 60px;
+    min-height: 40px;
+    max-width: 120px;
+    max-height: 85px;
 }
 
 .graphic-11 {
     --graphic-rotation: -18deg;
     bottom: 5%;
     right: 5%;
-    width: clamp(68px, 6.8vw, 170px);
-    height: clamp(50px, 5vw, 125px);
+    width: 6.8vw;
+    height: 5vw;
+    min-width: 90px;
+    min-height: 65px;
+    max-width: 170px;
+    max-height: 125px;
 }
 
 /* White backing layer removed */
@@ -147,4 +208,54 @@
     height: 8px;
     background: transparent;
     border-radius: 0 0 50% 50%;
+}
+
+/* Responsive Graphics - All Graphics */
+@media (max-width: 1024px) {
+    .graphic-2, .graphic-3, .graphic-6, .graphic-7, .graphic-8, .graphic-9, .graphic-10, .graphic-11 {
+        width: clamp(40px, 4vw, 100px);
+        height: clamp(30px, 3vw, 75px);
+    }
+}
+
+@media (max-width: 768px) {
+    .graphic-2 {
+        top: 30%;
+        right: 15%;
+        width: clamp(35px, 7vw, 80px);
+        height: clamp(25px, 5vw, 60px);
+    }
+    
+    .graphic-3 {
+        bottom: 20%;
+        left: 20%;
+        width: clamp(40px, 8vw, 90px);
+        height: clamp(30px, 6vw, 70px);
+    }
+    
+    .graphic-6, .graphic-7, .graphic-8, .graphic-9, .graphic-10, .graphic-11 {
+        width: clamp(30px, 6vw, 70px);
+        height: clamp(22px, 4.5vw, 55px);
+    }
+}
+
+@media (max-width: 480px) {
+    .graphic-2 {
+        top: 25%;
+        right: 10%;
+        width: clamp(25px, 8vw, 60px);
+        height: clamp(18px, 6vw, 45px);
+    }
+    
+    .graphic-3 {
+        bottom: 15%;
+        left: 15%;
+        width: clamp(30px, 10vw, 70px);
+        height: clamp(22px, 7.5vw, 55px);
+    }
+    
+    .graphic-6, .graphic-7, .graphic-8, .graphic-9, .graphic-10, .graphic-11 {
+        width: clamp(20px, 8vw, 50px);
+        height: clamp(15px, 6vw, 40px);
+    }
 }

@@ -5,19 +5,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    /* Responsive scaling variables */
-    --base-scale: 1;
-    --responsive-scale: clamp(0.5, 1vw, 1.5);
-    --clamped-scale: var(--responsive-scale);
-    
-    /* Breakpoints */
-    --mobile: 480px;
-    --tablet: 768px;
-    --laptop: 1024px;
-    --desktop: 1440px;
-}
-
 html, body {
     height: 100%;
     overflow-x: hidden;
@@ -30,6 +17,8 @@ body {
     position: relative;
     min-height: 100vh;
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>'), auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
