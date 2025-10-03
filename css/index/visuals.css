@@ -10,7 +10,7 @@
     min-height: 38px;
     max-width: 120px;
     max-height: 83px;
-    filter: contrast(2.0) brightness(1.4) saturate(0.3) drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.6)) grayscale(0.8);
+    filter: contrast(1.4) brightness(1.2) drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.6));
     mix-blend-mode: multiply;
     box-shadow: 3px 3px 0px #000000;
 }
@@ -49,7 +49,7 @@
     border: 3px solid #000000;
     border-radius: 6px;
     position: relative;
-    filter: contrast(2.0) brightness(1.4) saturate(0.3) drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5)) grayscale(0.8);
+    filter: contrast(1.4) brightness(1.2) drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
     mix-blend-mode: multiply;
     box-shadow: 2px 2px 0px #000000;
 }
@@ -72,7 +72,7 @@
     border-radius: 50%;
     position: relative;
     margin: 0 auto;
-    filter: contrast(2.0) brightness(1.4) saturate(0.3) drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5)) grayscale(0.8);
+    filter: contrast(1.4) brightness(1.2) drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
     mix-blend-mode: multiply;
     box-shadow: 2px 2px 0px #000000;
 }
@@ -98,7 +98,7 @@
     border-radius: 50%;
     position: relative;
     margin: 30px auto;
-    filter: contrast(2.0) brightness(1.4) saturate(0.3) drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.6)) grayscale(0.8);
+    filter: contrast(1.4) brightness(1.2) drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.6));
     mix-blend-mode: multiply;
     box-shadow: 3px 3px 0px #000000;
 }
@@ -133,7 +133,7 @@
     border-radius: 50%;
     margin: 23px auto;
     position: relative;
-    filter: contrast(2.0) brightness(1.4) saturate(0.3) drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5)) grayscale(0.8);
+    filter: contrast(1.4) brightness(1.2) drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
     mix-blend-mode: multiply;
     box-shadow: 2px 2px 0px #000000;
 }
@@ -158,7 +158,7 @@
     border-radius: 0 0 30px 30px;
     margin: 23px auto;
     position: relative;
-    filter: contrast(2.0) brightness(1.4) saturate(0.3) drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5)) grayscale(0.8);
+    filter: contrast(1.4) brightness(1.2) drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
     mix-blend-mode: multiply;
     box-shadow: 2px 2px 0px #000000;
 }
