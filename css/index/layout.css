@@ -73,7 +73,7 @@
     color: #000000;
     padding: 0.5vw 1vw;
     font-weight: 400;
-    font-size: clamp(0.83vw, 1.2vw, 1.67vw);
+    font-size: clamp(0.3vw, 1.2vw, 6vw);
     letter-spacing: 0.1vw;
     border: none;
     margin-bottom: 1.5vh;
@@ -81,8 +81,8 @@
     transform: rotate(-2deg);
     font-family: 'Kalam', cursive, 'Inter', sans-serif;
     cursor: pointer;
-    width: clamp(4.17vw, 5vw, 6.94vw);
-    height: clamp(2.08vw, 2.5vw, 3.47vw);
+    width: clamp(1.25vw, 5vw, 25vw);
+    height: clamp(0.6vw, 2.5vw, 12.5vw);
     display: flex;
     align-items: center;
     justify-content: center;

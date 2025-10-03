@@ -40,13 +40,13 @@
 }
 
 .photo-right .torn-photo {
-    width: clamp(20.83vw, 22vw, 31.25vw);
-    height: clamp(15.28vw, 16vw, 22.92vw);
+    width: clamp(5.5vw, 22vw, 110vw);
+    height: clamp(4vw, 16vw, 80vw);
 }
 
 .photo-left .torn-photo {
-    width: clamp(27.78vw, 28vw, 38.19vw);
-    height: clamp(19.44vw, 20vw, 27.78vw);
+    width: clamp(7vw, 28vw, 140vw);
+    height: clamp(5vw, 20vw, 100vw);
 }
 
 /* Responsive Photo Sizing */
@@ -99,13 +99,13 @@
 .photo-left .torn-photo::after {
     background-image: url('../../images/background/left.png');
     transform: rotate(180deg);
-    inset: -10.42vw;
+    inset: clamp(-2.5vw, -10.42vw, -52vw);
 }
 
 .photo-right .torn-photo::after {
     background-image: url('../../images/background/right.png');
     transform: rotate(3deg);
-    inset: -5.56vw;
+    inset: clamp(-1.4vw, -5.56vw, -28vw);
 }
 
 /* Responsive Background Sizing */
@@ -152,16 +152,16 @@
 
 /* Left photo content */
 .photo-left .photo-content {
-    inset: -4.86vw;
-    width: calc(100% + 9.03vw);
-    height: calc(100% + 9.03vw);
+    inset: clamp(-1.2vw, -4.86vw, -24vw);
+    width: calc(100% + clamp(2.3vw, 9.03vw, 45vw));
+    height: calc(100% + clamp(2.3vw, 9.03vw, 45vw));
 }
 
 /* Right photo content - bigger */
 .photo-right .photo-content {
-    inset: -2.08vw;
-    width: calc(100% + 4.17vw);
-    height: calc(100% + 4.17vw);
+    inset: clamp(-0.5vw, -2.08vw, -10vw);
+    width: calc(100% + clamp(1vw, 4.17vw, 21vw));
+    height: calc(100% + clamp(1vw, 4.17vw, 21vw));
 }
 
 /* Responsive Photo Content Sizing */

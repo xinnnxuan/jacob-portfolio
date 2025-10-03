@@ -3,7 +3,7 @@
 }
 
 .title-line-1 {
-    font-size: clamp(3.33vw, 4.5vw, 6.67vw);
+    font-size: clamp(1.1vw, 4.5vw, 22.5vw);
     font-weight: 900;
     letter-spacing: 0.3vw;
     line-height: 0.8;
@@ -15,11 +15,11 @@
     position: absolute;
     right: -2.5vw;
     top: 0;
-    font-size: clamp(2.5vw, 3.4vw, 5vw);
+    font-size: clamp(0.85vw, 3.4vw, 17vw);
 }
 
 .title-line-2 {
-    font-size: clamp(1.11vw, 1.5vw, 2.22vw);
+    font-size: clamp(0.4vw, 1.5vw, 7.5vw);
     font-weight: 400;
     letter-spacing: 0.5vw;
     margin-left: 1.25vw;
@@ -27,14 +27,14 @@
 
 .subtitle-brackets {
     font-family: 'Space Mono', monospace;
-    font-size: clamp(0.69vw, 0.9vw, 1.25vw);
+    font-size: clamp(0.2vw, 0.9vw, 4.5vw);
     color: #cccccc;
     margin-bottom: 0.6vh;
     letter-spacing: 0.06vw;
 }
 
 .subtitle-italic {
-    font-size: clamp(0.83vw, 1vw, 1.39vw);
+    font-size: clamp(0.25vw, 1vw, 5vw);
     font-style: italic;
     color: #cccccc;
     font-weight: 300;
