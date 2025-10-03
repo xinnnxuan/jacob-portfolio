@@ -40,13 +40,21 @@
 }
 
 .photo-right .torn-photo {
-    width: clamp(5.5vw, 22vw, 110vw);
-    height: clamp(4vw, 16vw, 80vw);
+    width: 22vw;
+    height: 16vw;
+    min-width: 300px;
+    min-height: 220px;
+    max-width: 450px;
+    max-height: 330px;
 }
 
 .photo-left .torn-photo {
-    width: clamp(7vw, 28vw, 140vw);
-    height: clamp(5vw, 20vw, 100vw);
+    width: 28vw;
+    height: 20vw;
+    min-width: 400px;
+    min-height: 280px;
+    max-width: 550px;
+    max-height: 400px;
 }
 
 /* Comprehensive Responsive Photo Testing */
@@ -159,13 +167,13 @@
 .photo-left .torn-photo::after {
     background-image: url('../../images/background/left.png');
     transform: rotate(180deg);
-    inset: clamp(-2.5vw, -10.42vw, -52vw);
+    inset: -150px;
 }
 
 .photo-right .torn-photo::after {
     background-image: url('../../images/background/right.png');
     transform: rotate(3deg);
-    inset: clamp(-1.4vw, -5.56vw, -28vw);
+    inset: -80px;
 }
 
 /* Responsive Background Sizing */
@@ -212,16 +220,16 @@
 
 /* Left photo content */
 .photo-left .photo-content {
-    inset: clamp(-1.2vw, -4.86vw, -24vw);
-    width: calc(100% + clamp(2.3vw, 9.03vw, 45vw));
-    height: calc(100% + clamp(2.3vw, 9.03vw, 45vw));
+    inset: -70px;
+    width: calc(100% + 130px);
+    height: calc(100% + 130px);
 }
 
 /* Right photo content - bigger */
 .photo-right .photo-content {
-    inset: clamp(-0.5vw, -2.08vw, -10vw);
-    width: calc(100% + clamp(1vw, 4.17vw, 21vw));
-    height: calc(100% + clamp(1vw, 4.17vw, 21vw));
+    inset: -30px;
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
 }
 
 /* Responsive Photo Content Sizing */
