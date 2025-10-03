@@ -8,6 +8,9 @@
     letter-spacing: 0.3vw;
     line-height: 0.8;
     position: relative;
+    color: #FFFF00;
+    text-shadow: 3px 3px 0px #000000, 6px 6px 0px rgba(255, 255, 0, 0.3);
+    filter: contrast(1.2) brightness(1.1);
 }
 
 .title-line-1::after {
@@ -16,13 +19,19 @@
     right: -2.5vw;
     top: 0;
     font-size: clamp(2.5vw, 3.4vw, 5vw);
+    color: #FFFF00;
+    text-shadow: 2px 2px 0px #000000;
+    filter: contrast(1.2) brightness(1.1);
 }
 
 .title-line-2 {
     font-size: clamp(1.11vw, 1.5vw, 2.22vw);
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 0.5vw;
     margin-left: 1.25vw;
+    color: #FFFF00;
+    text-shadow: 2px 2px 0px #000000;
+    filter: contrast(1.2) brightness(1.1);
 }
 
 .subtitle-brackets {

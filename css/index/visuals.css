@@ -1,7 +1,8 @@
 .film-camera {
     width: 4.5vw;
     height: 3vw;
-    background: #ffffff;
+    background: #FFFF00;
+    border: 4px solid #000000;
     border-radius: 0.75vw;
     position: relative;
     transform: rotate(5deg);
@@ -9,8 +10,9 @@
     min-height: 38px;
     max-width: 120px;
     max-height: 83px;
-    filter: contrast(1.2) brightness(1.1) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    filter: contrast(1.4) brightness(1.2) drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.6));
     mix-blend-mode: multiply;
+    box-shadow: 3px 3px 0px #000000;
 }
 
 .film-camera::before {
@@ -43,31 +45,36 @@
 .handle {
     width: 45px;
     height: 12px;
-    background: #ffffff;
+    background: #FFFF00;
+    border: 3px solid #000000;
     border-radius: 6px;
     position: relative;
-    filter: contrast(1.2) brightness(1.1) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    filter: contrast(1.4) brightness(1.2) drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
     mix-blend-mode: multiply;
+    box-shadow: 2px 2px 0px #000000;
 }
 
 .chain {
-    width: 3px;
+    width: 4px;
     height: 30px;
-    background: #ffffff;
+    background: #000000;
     margin: 8px auto;
-    filter: contrast(1.2) brightness(1.1) drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
+    filter: contrast(1.4) brightness(1.2) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
     mix-blend-mode: multiply;
+    border-radius: 2px;
 }
 
 .spiked-ball {
     width: 30px;
     height: 30px;
-    background: #ffffff;
+    background: #FFFF00;
+    border: 3px solid #000000;
     border-radius: 50%;
     position: relative;
     margin: 0 auto;
-    filter: contrast(1.2) brightness(1.1) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    filter: contrast(1.4) brightness(1.2) drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
     mix-blend-mode: multiply;
+    box-shadow: 2px 2px 0px #000000;
 }
 
 .spiked-ball::before {
@@ -86,12 +93,14 @@
 .skull {
     width: 45px;
     height: 45px;
-    background: #ffffff;
+    background: #FFFF00;
+    border: 4px solid #000000;
     border-radius: 50%;
     position: relative;
     margin: 30px auto;
-    filter: contrast(1.2) brightness(1.1) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    filter: contrast(1.4) brightness(1.2) drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.6));
     mix-blend-mode: multiply;
+    box-shadow: 3px 3px 0px #000000;
 }
 
 .skull::before {
@@ -119,12 +128,14 @@
 .eye-photo {
     width: 38px;
     height: 23px;
-    background: #ffffff;
+    background: #FFFF00;
+    border: 3px solid #000000;
     border-radius: 50%;
     margin: 23px auto;
     position: relative;
-    filter: contrast(1.2) brightness(1.1) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    filter: contrast(1.4) brightness(1.2) drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
     mix-blend-mode: multiply;
+    box-shadow: 2px 2px 0px #000000;
 }
 
 .eye-photo::before {
@@ -142,12 +153,14 @@
 .teeth {
     width: 60px;
     height: 30px;
-    background: #ffffff;
+    background: #FFFF00;
+    border: 4px solid #000000;
     border-radius: 0 0 30px 30px;
     margin: 23px auto;
     position: relative;
-    filter: contrast(1.2) brightness(1.1) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    filter: contrast(1.4) brightness(1.2) drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
     mix-blend-mode: multiply;
+    box-shadow: 2px 2px 0px #000000;
 }
 
 .teeth::before {
