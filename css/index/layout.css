@@ -4,28 +4,12 @@
     width: 100%;
     min-height: 100vh;
     z-index: 2;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
 }
 
-/* Responsive Grid Layout */
-.main-container {
-    display: grid;
-    grid-template-areas: 
-        "top-left top-right"
-        "center center"
-        "bottom-left bottom-right";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    gap: 2rem;
-    padding: 2rem;
-}
-
-/* Mobile Layout */
+/* Mobile Layout - Only apply grid on small screens */
 @media (max-width: 768px) {
     .main-container {
+        display: grid;
         grid-template-areas: 
             "top-left"
             "top-right"
@@ -41,30 +25,47 @@
 
 /* Top Left Elements */
 .top-left {
-    grid-area: top-left;
+    position: absolute;
+    top: 5%;
+    left: 5%;
     z-index: 10;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
 .center-content {
-    grid-area: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     z-index: 10;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Top Right Elements */
 .top-right {
-    grid-area: top-right;
+    position: absolute;
+    top: 5%;
+    right: 5%;
     z-index: 10;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+}
+
+/* Mobile Layout - Use grid areas */
+@media (max-width: 768px) {
+    .top-left {
+        grid-area: top-left;
+        position: static;
+        transform: none;
+    }
+    
+    .center-content {
+        grid-area: center;
+        position: static;
+        transform: none;
+    }
+    
+    .top-right {
+        grid-area: top-right;
+        position: static;
+    }
 }
 
 .menu-button {
@@ -98,11 +99,18 @@
 
 /* Center Right Elements */
 .center-right {
-    grid-area: center-right;
+    position: absolute;
+    top: 40%;
+    right: 10%;
     z-index: 10;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+}
+
+/* Mobile Layout - Use grid areas */
+@media (max-width: 768px) {
+    .center-right {
+        grid-area: center-right;
+        position: static;
+    }
 }
 
 /* Responsive Breakpoints */

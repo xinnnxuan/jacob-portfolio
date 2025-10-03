@@ -1,19 +1,12 @@
 /* Graphics Container */
 .graphics-container {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;
     z-index: 5;
-}
-
-/* Responsive Graphics Container */
-@media (max-width: 768px) {
-    .graphics-container {
-        position: absolute;
-    }
 }
 
 .torn-graphic {
@@ -28,8 +21,12 @@
     --graphic-rotation: -15deg;
     top: 25%;
     left: 15%;
-    width: clamp(60px, 6vw, 150px);
-    height: clamp(45px, 4.5vw, 120px);
+    width: 6vw;
+    height: 4.5vw;
+    min-width: 80px;
+    min-height: 60px;
+    max-width: 150px;
+    max-height: 120px;
 }
 
 /* Responsive Graphics Sizing */
@@ -62,8 +59,12 @@
     --graphic-rotation: 8deg;
     top: 35%;
     right: 20%;
-    width: clamp(50px, 5.5vw, 140px);
-    height: clamp(35px, 4vw, 100px);
+    width: 5.5vw;
+    height: 4vw;
+    min-width: 70px;
+    min-height: 50px;
+    max-width: 140px;
+    max-height: 100px;
 }
 
 .graphic-3 {

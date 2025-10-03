@@ -1,18 +1,35 @@
 /* Photo Elements */
 .photo-left,
 .photo-right {
+    position: absolute;
     z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .photo-left {
-    grid-area: bottom-left;
+    bottom: -3%;
+    left: 8%;
 }
 
 .photo-right {
-    grid-area: bottom-right;
+    bottom: 15%;
+    right: 8%;
+}
+
+/* Mobile Layout - Use grid areas */
+@media (max-width: 768px) {
+    .photo-left {
+        grid-area: bottom-left;
+        position: static;
+        bottom: auto;
+        left: auto;
+    }
+    
+    .photo-right {
+        grid-area: bottom-right;
+        position: static;
+        bottom: auto;
+        right: auto;
+    }
 }
 
 .torn-photo {
@@ -23,13 +40,21 @@
 }
 
 .photo-right .torn-photo {
-    width: clamp(200px, 22vw, 450px);
-    height: clamp(150px, 16vw, 330px);
+    width: 22vw;
+    height: 16vw;
+    min-width: 300px;
+    min-height: 220px;
+    max-width: 450px;
+    max-height: 330px;
 }
 
 .photo-left .torn-photo {
-    width: clamp(250px, 28vw, 550px);
-    height: clamp(180px, 20vw, 400px);
+    width: 28vw;
+    height: 20vw;
+    min-width: 400px;
+    min-height: 280px;
+    max-width: 550px;
+    max-height: 400px;
 }
 
 /* Responsive Photo Sizing */
@@ -82,13 +107,13 @@
 .photo-left .torn-photo::after {
     background-image: url('../../images/background/left.png');
     transform: rotate(180deg);
-    inset: clamp(-80px, -8vw, -150px);
+    inset: -150px;
 }
 
 .photo-right .torn-photo::after {
     background-image: url('../../images/background/right.png');
     transform: rotate(3deg);
-    inset: clamp(-40px, -4vw, -80px);
+    inset: -80px;
 }
 
 /* Responsive Background Sizing */
@@ -135,16 +160,16 @@
 
 /* Left photo content */
 .photo-left .photo-content {
-    inset: clamp(-35px, -3.5vw, -70px);
-    width: calc(100% + clamp(70px, 7vw, 130px));
-    height: calc(100% + clamp(70px, 7vw, 130px));
+    inset: -70px;
+    width: calc(100% + 130px);
+    height: calc(100% + 130px);
 }
 
 /* Right photo content - bigger */
 .photo-right .photo-content {
-    inset: clamp(-15px, -1.5vw, -30px);
-    width: calc(100% + clamp(30px, 3vw, 60px));
-    height: calc(100% + clamp(30px, 3vw, 60px));
+    inset: -30px;
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
 }
 
 /* Responsive Photo Content Sizing */
