@@ -1,51 +1,51 @@
 .main-title {
-    margin-bottom: 2vh;
+    margin-bottom: 20px;
 }
 
 .title-line-1 {
-    font-size: 7.2vw;
+    font-size: 4.5vw;
     font-weight: 900;
-    letter-spacing: 0.5vw;
+    letter-spacing: 0.3vw;
     line-height: 0.8;
     position: relative;
     min-font-size: 48px;
-    max-font-size: 120px;
+    max-font-size: 96px;
 }
 
 .title-line-1::after {
     content: '⚡';
     position: absolute;
-    right: -4vw;
+    right: -2.5vw;
     top: 0;
-    font-size: 5.4vw;
+    font-size: 3.4vw;
     min-font-size: 36px;
-    max-font-size: 90px;
+    max-font-size: 72px;
 }
 
 .title-line-2 {
-    font-size: 2.4vw;
+    font-size: 1.5vw;
     font-weight: 400;
-    letter-spacing: 0.8vw;
-    margin-left: 2vw;
+    letter-spacing: 0.5vw;
+    margin-left: 1.25vw;
     min-font-size: 16px;
-    max-font-size: 40px;
+    max-font-size: 32px;
 }
 
 .subtitle-brackets {
     font-family: 'Space Mono', monospace;
-    font-size: 1.4vw;
+    font-size: 0.9vw;
     color: #cccccc;
-    margin-bottom: 1vh;
-    letter-spacing: 0.1vw;
-    min-font-size: 12px;
-    max-font-size: 24px;
+    margin-bottom: 0.6vh;
+    letter-spacing: 0.06vw;
+    min-font-size: 10px;
+    max-font-size: 18px;
 }
 
 .subtitle-italic {
-    font-size: 1.6vw;
+    font-size: 1vw;
     font-style: italic;
     color: #cccccc;
     font-weight: 300;
-    min-font-size: 14px;
-    max-font-size: 28px;
+    min-font-size: 12px;
+    max-font-size: 20px;
 }

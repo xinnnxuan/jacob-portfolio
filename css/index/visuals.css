@@ -1,10 +1,14 @@
 .film-camera {
-    width: 60px;
-    height: 40px;
+    width: 3vw;
+    height: 2vw;
     background: #ffffff;
-    border-radius: 8px;
+    border-radius: 0.5vw;
     position: relative;
     transform: rotate(5deg);
+    min-width: 40px;
+    min-height: 25px;
+    max-width: 80px;
+    max-height: 55px;
 }
 
 .film-camera::before {
@@ -147,11 +151,13 @@
 }
 
 .grit-logo-small {
-    font-size: 18px;
+    font-size: 1.1vw;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 0.12vw;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.2vh;
     transform: rotate(-5deg);
+    min-font-size: 12px;
+    max-font-size: 24px;
 }
 

@@ -1,76 +1,60 @@
-/* Main Container - CSS Grid Layout */
+/* Main Container */
 .main-container {
     position: relative;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-areas: 
-        "top-left center top-right"
-        "center-left center center-right"
-        "center-left center center-right"
-        "bottom-left center bottom-right";
-    gap: 2vh 2vw;
-    padding: 2vh 2vw;
     z-index: 2;
-    box-sizing: border-box;
 }
 
 /* Top Left Elements */
 .top-left {
-    grid-area: top-left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    position: absolute;
+    top: 5%;
+    left: 5%;
     z-index: 10;
 }
 
 .center-content {
-    grid-area: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     z-index: 10;
 }
 
 /* Top Right Elements */
 .top-right {
-    grid-area: top-right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-start;
+    position: absolute;
+    top: 5%;
+    right: 5%;
     z-index: 10;
 }
 
 .menu-button {
     background: #ffffff;
     color: #000000;
-    padding: 0.8vh 1.6vw;
+    padding: 0.5vw 1vw;
     font-weight: 400;
-    font-size: 2vw;
+    font-size: 1.2vw;
     letter-spacing: 0.1vw;
     border: none;
-    margin-bottom: 2vh;
+    margin-bottom: 1.5vh;
     position: relative;
     transform: rotate(-2deg);
     font-family: 'Kalam', cursive, 'Inter', sans-serif;
     cursor: pointer;
-    width: 8vw;
-    height: 4vh;
+    width: 5vw;
+    height: 2.5vw;
     min-width: 60px;
     min-height: 30px;
-    max-width: 120px;
-    max-height: 60px;
+    max-width: 100px;
+    max-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.4vw;
-    background-image: url('../../images/background/IMG_8712.JPG');
+    border-radius: 0.3vw;
+    background-image: url('IMG_8712.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,30 +62,8 @@
 
 /* Center Right Elements */
 .center-right {
-    grid-area: center-right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    z-index: 10;
-}
-
-/* Bottom Left Elements */
-.bottom-left {
-    grid-area: bottom-left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    z-index: 10;
-}
-
-/* Bottom Right Elements */
-.bottom-right {
-    grid-area: bottom-right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+    position: absolute;
+    top: 40%;
+    right: 10%;
     z-index: 10;
 }
