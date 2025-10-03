@@ -21,12 +21,8 @@
     --graphic-rotation: -15deg;
     top: 25%;
     left: 15%;
-    width: 6vw;
-    height: 4.5vw;
-    min-width: 80px;
-    min-height: 60px;
-    max-width: 150px;
-    max-height: 120px;
+    width: clamp(5.56vw, 6vw, 10.42vw);
+    height: clamp(4.17vw, 4.5vw, 8.33vw);
 }
 
 /* Responsive Graphics Sizing */
@@ -59,96 +55,64 @@
     --graphic-rotation: 8deg;
     top: 35%;
     right: 20%;
-    width: 5.5vw;
-    height: 4vw;
-    min-width: 70px;
-    min-height: 50px;
-    max-width: 140px;
-    max-height: 100px;
+    width: clamp(4.86vw, 5.5vw, 9.72vw);
+    height: clamp(3.47vw, 4vw, 6.94vw);
 }
 
 .graphic-3 {
     --graphic-rotation: -5deg;
     bottom: 25%;
     left: 25%;
-    width: 6.5vw;
-    height: 4.8vw;
-    min-width: 90px;
-    min-height: 65px;
-    max-width: 160px;
-    max-height: 120px;
+    width: clamp(6.25vw, 6.5vw, 11.11vw);
+    height: clamp(4.51vw, 4.8vw, 8.33vw);
 }
 
 .graphic-6 {
     --graphic-rotation: 6deg;
     top: 60%;
     left: 40%;
-    width: 5.3vw;
-    height: 3.8vw;
-    min-width: 70px;
-    min-height: 50px;
-    max-width: 130px;
-    max-height: 95px;
+    width: clamp(4.86vw, 5.3vw, 9.03vw);
+    height: clamp(3.47vw, 3.8vw, 6.60vw);
 }
 
 .graphic-7 {
     --graphic-rotation: -12deg;
     top: 45%;
     left: 5%;
-    width: 7vw;
-    height: 5vw;
-    min-width: 100px;
-    min-height: 70px;
-    max-width: 180px;
-    max-height: 130px;
+    width: clamp(6.94vw, 7vw, 12.5vw);
+    height: clamp(4.86vw, 5vw, 9.03vw);
 }
 
 .graphic-8 {
     --graphic-rotation: 15deg;
     bottom: 15%;
     left: 60%;
-    width: 5.8vw;
-    height: 4.3vw;
-    min-width: 80px;
-    min-height: 60px;
-    max-width: 150px;
-    max-height: 110px;
+    width: clamp(5.56vw, 5.8vw, 10.42vw);
+    height: clamp(4.17vw, 4.3vw, 7.64vw);
 }
 
 .graphic-9 {
     --graphic-rotation: -6deg;
     top: 70%;
     right: 30%;
-    width: 6.3vw;
-    height: 4.5vw;
-    min-width: 85px;
-    min-height: 60px;
-    max-width: 160px;
-    max-height: 115px;
+    width: clamp(5.90vw, 6.3vw, 11.11vw);
+    height: clamp(4.17vw, 4.5vw, 7.99vw);
 }
 
 .graphic-10 {
     --graphic-rotation: 9deg;
     top: 5%;
     left: 30%;
-    width: 5vw;
-    height: 3.5vw;
-    min-width: 60px;
-    min-height: 40px;
-    max-width: 120px;
-    max-height: 85px;
+    width: clamp(4.17vw, 5vw, 8.33vw);
+    height: clamp(2.78vw, 3.5vw, 5.90vw);
 }
 
 .graphic-11 {
     --graphic-rotation: -18deg;
     bottom: 5%;
     right: 5%;
-    width: 6.8vw;
-    height: 5vw;
-    min-width: 90px;
-    min-height: 65px;
-    max-width: 170px;
-    max-height: 125px;
+    width: clamp(6.25vw, 6.8vw, 11.81vw);
+    height: clamp(4.51vw, 5vw, 8.68vw);
 }
 
 /* White backing layer removed */
