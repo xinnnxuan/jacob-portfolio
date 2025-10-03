@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/index/hero_logo.css">
     <link rel="stylesheet" href="../css/index/nav.css">
     <link rel="stylesheet" href="../css/index/background.css">
-    <link rel="stylesheet" href="../css/index/night-sky.css">
+    <link rel="stylesheet" href="../css/index/leo_constellation.css">
     <link rel="stylesheet" href="../css/index/graphics.css">
     <link rel="stylesheet" href="../css/index/visuals.css">
     <link rel="stylesheet" href="../css/index/photo.css">
@@ -19,56 +19,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Night Sky Background with Leo Constellation -->
-    <div class="night-sky-overlay">
-        <div class="stars"></div>
-        <svg class="leo-constellation" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-            <!-- Leo constellation lines -->
+    <!-- Leo Constellation Night Sky Background -->
+    <div class="leo-constellation">
+        <div class="starfield"></div>
+        <svg class="leo-svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet">
+            <!-- Leo Constellation Lines -->
             <g class="leo-lines">
                 <!-- Lion's head outline -->
-                <path d="M15,25 Q20,20 25,25 Q30,20 35,25 Q40,20 45,25" />
+                <path d="M200,300 Q250,280 300,300 Q350,320 400,300 Q450,280 500,300" />
                 <!-- Lion's mane -->
-                <path d="M20,30 Q15,35 20,40 Q25,45 30,40 Q35,45 40,40 Q45,35 40,30" />
+                <path d="M200,300 Q180,250 200,200 Q220,180 250,200 Q280,220 300,200 Q320,180 350,200 Q380,220 400,200 Q420,180 450,200 Q480,220 500,200" />
                 <!-- Lion's body -->
-                <path d="M25,45 Q20,50 25,55 Q30,60 35,55 Q40,50 35,45" />
+                <path d="M300,300 Q350,350 400,400 Q450,450 500,500 Q550,550 600,500" />
                 <!-- Lion's tail -->
-                <path d="M35,55 Q40,60 45,65 Q50,70 55,65" />
+                <path d="M600,500 Q650,480 700,500 Q750,520 800,500" />
                 <!-- Lion's legs -->
-                <path d="M25,55 L20,65 M30,55 L25,65 M35,55 L40,65 M40,55 L45,65" />
+                <path d="M400,400 L420,500 M450,450 L470,550 M500,500 L520,600 M550,550 L570,650" />
             </g>
             
-            <!-- Leo constellation stars -->
+            <!-- Leo Constellation Stars -->
             <g class="leo-stars">
-                <!-- Main stars (Regulus and other bright stars) -->
-                <circle cx="25" cy="25" r="1.5" class="leo-main-stars" />
-                <circle cx="35" cy="30" r="1.2" class="leo-main-stars" />
-                <circle cx="30" cy="40" r="1" class="leo-main-stars" />
-                <circle cx="40" cy="45" r="1.1" class="leo-main-stars" />
-                <circle cx="45" cy="60" r="1" class="leo-main-stars" />
+                <!-- Main stars of Leo -->
+                <circle cx="200" cy="300" r="2" class="leo-main-stars" />
+                <circle cx="250" cy="280" r="1.5" />
+                <circle cx="300" cy="300" r="2" class="leo-main-stars" />
+                <circle cx="350" cy="320" r="1.5" />
+                <circle cx="400" cy="300" r="2" class="leo-main-stars" />
+                <circle cx="450" cy="280" r="1.5" />
+                <circle cx="500" cy="300" r="2" class="leo-main-stars" />
                 
-                <!-- Secondary stars -->
-                <circle cx="20" cy="20" r="0.8" />
-                <circle cx="30" cy="20" r="0.7" />
-                <circle cx="40" cy="20" r="0.6" />
-                <circle cx="15" cy="30" r="0.7" />
-                <circle cx="45" cy="30" r="0.8" />
-                <circle cx="20" cy="40" r="0.6" />
-                <circle cx="50" cy="40" r="0.7" />
-                <circle cx="15" cy="50" r="0.8" />
-                <circle cx="25" cy="50" r="0.6" />
-                <circle cx="35" cy="50" r="0.7" />
-                <circle cx="45" cy="50" r="0.6" />
-                <circle cx="20" cy="60" r="0.7" />
-                <circle cx="30" cy="60" r="0.8" />
-                <circle cx="40" cy="60" r="0.6" />
-                <circle cx="50" cy="60" r="0.7" />
-                <circle cx="25" cy="70" r="0.6" />
-                <circle cx="35" cy="70" r="0.7" />
-                <circle cx="45" cy="70" r="0.8" />
+                <!-- Regulus (Alpha Leonis) - brightest star -->
+                <circle cx="300" cy="300" r="3" class="leo-regulus" />
+                
+                <!-- Lion's mane stars -->
+                <circle cx="180" cy="250" r="1" />
+                <circle cx="220" cy="220" r="1.5" />
+                <circle cx="280" cy="240" r="1" />
+                <circle cx="320" cy="220" r="1" />
+                <circle cx="380" cy="240" r="1.5" />
+                <circle cx="420" cy="220" r="1" />
+                <circle cx="480" cy="240" r="1" />
+                
+                <!-- Lion's body stars -->
+                <circle cx="350" cy="350" r="1.5" />
+                <circle cx="400" cy="400" r="2" class="leo-main-stars" />
+                <circle cx="450" cy="450" r="1.5" />
+                <circle cx="500" cy="500" r="2" class="leo-main-stars" />
+                <circle cx="550" cy="550" r="1.5" />
+                <circle cx="600" cy="500" r="2" class="leo-main-stars" />
+                
+                <!-- Lion's tail stars -->
+                <circle cx="650" cy="480" r="1" />
+                <circle cx="700" cy="500" r="1.5" />
+                <circle cx="750" cy="520" r="1" />
+                <circle cx="800" cy="500" r="1.5" />
+                
+                <!-- Additional stars for depth -->
+                <circle cx="150" cy="200" r="0.5" />
+                <circle cx="180" cy="180" r="0.5" />
+                <circle cx="220" cy="160" r="0.5" />
+                <circle cx="280" cy="180" r="0.5" />
+                <circle cx="320" cy="160" r="0.5" />
+                <circle cx="380" cy="180" r="0.5" />
+                <circle cx="420" cy="160" r="0.5" />
+                <circle cx="480" cy="180" r="0.5" />
+                <circle cx="520" cy="160" r="0.5" />
+                <circle cx="580" cy="180" r="0.5" />
+                <circle cx="620" cy="160" r="0.5" />
+                <circle cx="680" cy="180" r="0.5" />
+                <circle cx="720" cy="160" r="0.5" />
+                <circle cx="780" cy="180" r="0.5" />
+                <circle cx="820" cy="160" r="0.5" />
             </g>
         </svg>
     </div>
-
+    
     <!-- Background Elements -->
     <div class="background-elements">
         <div class="stars"></div>
