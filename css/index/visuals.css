@@ -1,23 +1,23 @@
 .film-camera {
-    width: 3vw;
-    height: 2vw;
+    width: calc(3vw * var(--clamped-scale));
+    height: calc(2vw * var(--clamped-scale));
     background: #ffffff;
-    border-radius: 0.5vw;
+    border-radius: calc(0.5vw * var(--clamped-scale));
     position: relative;
     transform: rotate(5deg);
-    min-width: 40px;
-    min-height: 25px;
-    max-width: 80px;
-    max-height: 55px;
+    min-width: calc(40px * var(--clamped-scale));
+    min-height: calc(25px * var(--clamped-scale));
+    max-width: calc(80px * var(--clamped-scale));
+    max-height: calc(55px * var(--clamped-scale));
 }
 
 .film-camera::before {
     content: '';
     position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 20px;
-    height: 20px;
+    top: calc(10px * var(--clamped-scale));
+    left: calc(10px * var(--clamped-scale));
+    width: calc(20px * var(--clamped-scale));
+    height: calc(20px * var(--clamped-scale));
     background: #000000;
     border-radius: 50%;
 }
@@ -25,12 +25,12 @@
 .film-camera::after {
     content: '';
     position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 15px;
-    height: 15px;
+    top: calc(5px * var(--clamped-scale));
+    right: calc(5px * var(--clamped-scale));
+    width: calc(15px * var(--clamped-scale));
+    height: calc(15px * var(--clamped-scale));
     background: #000000;
-    border-radius: 2px;
+    border-radius: calc(2px * var(--clamped-scale));
 }
 
 .nunchaku {

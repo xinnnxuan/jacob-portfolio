@@ -11,118 +11,118 @@
 
 .torn-graphic {
     position: absolute;
-    width: calc(60px * var(--scale-factor));
-    height: calc(40px * var(--scale-factor));
+    width: calc(60px * var(--clamped-scale));
+    height: calc(40px * var(--clamped-scale));
     background: transparent;
     transform: rotate(var(--graphic-rotation));
 }
 
 .graphic-1 {
     --graphic-rotation: -15deg;
-    top: 25%;
-    left: 15%;
-    width: calc(6vw * var(--scale-factor));
-    height: calc(4.5vw * var(--scale-factor));
-    min-width: calc(80px * var(--scale-factor));
-    min-height: calc(60px * var(--scale-factor));
-    max-width: calc(150px * var(--scale-factor));
-    max-height: calc(120px * var(--scale-factor));
+    top: calc(25% * var(--clamped-scale));
+    left: calc(15% * var(--clamped-scale));
+    width: calc(6vw * var(--clamped-scale));
+    height: calc(4.5vw * var(--clamped-scale));
+    min-width: calc(80px * var(--clamped-scale));
+    min-height: calc(60px * var(--clamped-scale));
+    max-width: calc(150px * var(--clamped-scale));
+    max-height: calc(120px * var(--clamped-scale));
 }
 
 .graphic-2 {
     --graphic-rotation: 8deg;
-    top: 35%;
-    right: 20%;
-    width: 5.5vw;
-    height: 4vw;
-    min-width: 70px;
-    min-height: 50px;
-    max-width: 140px;
-    max-height: 100px;
+    top: calc(35% * var(--clamped-scale));
+    right: calc(20% * var(--clamped-scale));
+    width: calc(5.5vw * var(--clamped-scale));
+    height: calc(4vw * var(--clamped-scale));
+    min-width: calc(70px * var(--clamped-scale));
+    min-height: calc(50px * var(--clamped-scale));
+    max-width: calc(140px * var(--clamped-scale));
+    max-height: calc(100px * var(--clamped-scale));
 }
 
 .graphic-3 {
     --graphic-rotation: -5deg;
-    bottom: 25%;
-    left: 25%;
-    width: 6.5vw;
-    height: 4.8vw;
-    min-width: 90px;
-    min-height: 65px;
-    max-width: 160px;
-    max-height: 120px;
+    bottom: calc(25% * var(--clamped-scale));
+    left: calc(25% * var(--clamped-scale));
+    width: calc(6.5vw * var(--clamped-scale));
+    height: calc(4.8vw * var(--clamped-scale));
+    min-width: calc(90px * var(--clamped-scale));
+    min-height: calc(65px * var(--clamped-scale));
+    max-width: calc(160px * var(--clamped-scale));
+    max-height: calc(120px * var(--clamped-scale));
 }
 
 .graphic-6 {
     --graphic-rotation: 6deg;
-    top: 60%;
-    left: 40%;
-    width: 5.3vw;
-    height: 3.8vw;
-    min-width: 70px;
-    min-height: 50px;
-    max-width: 130px;
-    max-height: 95px;
+    top: calc(60% * var(--clamped-scale));
+    left: calc(40% * var(--clamped-scale));
+    width: calc(5.3vw * var(--clamped-scale));
+    height: calc(3.8vw * var(--clamped-scale));
+    min-width: calc(70px * var(--clamped-scale));
+    min-height: calc(50px * var(--clamped-scale));
+    max-width: calc(130px * var(--clamped-scale));
+    max-height: calc(95px * var(--clamped-scale));
 }
 
 .graphic-7 {
     --graphic-rotation: -12deg;
-    top: 45%;
-    left: 5%;
-    width: 7vw;
-    height: 5vw;
-    min-width: 100px;
-    min-height: 70px;
-    max-width: 180px;
-    max-height: 130px;
+    top: calc(45% * var(--clamped-scale));
+    left: calc(5% * var(--clamped-scale));
+    width: calc(7vw * var(--clamped-scale));
+    height: calc(5vw * var(--clamped-scale));
+    min-width: calc(100px * var(--clamped-scale));
+    min-height: calc(70px * var(--clamped-scale));
+    max-width: calc(180px * var(--clamped-scale));
+    max-height: calc(130px * var(--clamped-scale));
 }
 
 .graphic-8 {
     --graphic-rotation: 15deg;
-    bottom: 15%;
-    left: 60%;
-    width: 5.8vw;
-    height: 4.3vw;
-    min-width: 80px;
-    min-height: 60px;
-    max-width: 150px;
-    max-height: 110px;
+    bottom: calc(15% * var(--clamped-scale));
+    left: calc(60% * var(--clamped-scale));
+    width: calc(5.8vw * var(--clamped-scale));
+    height: calc(4.3vw * var(--clamped-scale));
+    min-width: calc(80px * var(--clamped-scale));
+    min-height: calc(60px * var(--clamped-scale));
+    max-width: calc(150px * var(--clamped-scale));
+    max-height: calc(110px * var(--clamped-scale));
 }
 
 .graphic-9 {
     --graphic-rotation: -6deg;
-    top: 70%;
-    right: 30%;
-    width: 6.3vw;
-    height: 4.5vw;
-    min-width: 85px;
-    min-height: 60px;
-    max-width: 160px;
-    max-height: 115px;
+    top: calc(70% * var(--clamped-scale));
+    right: calc(30% * var(--clamped-scale));
+    width: calc(6.3vw * var(--clamped-scale));
+    height: calc(4.5vw * var(--clamped-scale));
+    min-width: calc(85px * var(--clamped-scale));
+    min-height: calc(60px * var(--clamped-scale));
+    max-width: calc(160px * var(--clamped-scale));
+    max-height: calc(115px * var(--clamped-scale));
 }
 
 .graphic-10 {
     --graphic-rotation: 9deg;
-    top: 5%;
-    left: 30%;
-    width: 5vw;
-    height: 3.5vw;
-    min-width: 60px;
-    min-height: 40px;
-    max-width: 120px;
-    max-height: 85px;
+    top: calc(5% * var(--clamped-scale));
+    left: calc(30% * var(--clamped-scale));
+    width: calc(5vw * var(--clamped-scale));
+    height: calc(3.5vw * var(--clamped-scale));
+    min-width: calc(60px * var(--clamped-scale));
+    min-height: calc(40px * var(--clamped-scale));
+    max-width: calc(120px * var(--clamped-scale));
+    max-height: calc(85px * var(--clamped-scale));
 }
 
 .graphic-11 {
     --graphic-rotation: -18deg;
-    bottom: 5%;
-    right: 5%;
-    width: 6.8vw;
-    height: 5vw;
-    min-width: 90px;
-    min-height: 65px;
-    max-width: 170px;
-    max-height: 125px;
+    bottom: calc(5% * var(--clamped-scale));
+    right: calc(5% * var(--clamped-scale));
+    width: calc(6.8vw * var(--clamped-scale));
+    height: calc(5vw * var(--clamped-scale));
+    min-width: calc(90px * var(--clamped-scale));
+    min-height: calc(65px * var(--clamped-scale));
+    max-width: calc(170px * var(--clamped-scale));
+    max-height: calc(125px * var(--clamped-scale));
 }
 
 /* White backing layer removed */

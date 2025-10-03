@@ -3,49 +3,49 @@
 }
 
 .title-line-1 {
-    font-size: calc(4.5vw * var(--scale-factor));
+    font-size: calc(4.5vw * var(--clamped-scale));
     font-weight: 900;
-    letter-spacing: calc(0.3vw * var(--scale-factor));
+    letter-spacing: calc(0.3vw * var(--clamped-scale));
     line-height: 0.8;
     position: relative;
-    min-font-size: calc(48px * var(--scale-factor));
-    max-font-size: calc(96px * var(--scale-factor));
+    min-font-size: calc(48px * var(--clamped-scale));
+    max-font-size: calc(96px * var(--clamped-scale));
 }
 
 .title-line-1::after {
     content: '⚡';
     position: absolute;
-    right: calc(-2.5vw * var(--scale-factor));
+    right: calc(-2.5vw * var(--clamped-scale));
     top: 0;
-    font-size: calc(3.4vw * var(--scale-factor));
-    min-font-size: calc(36px * var(--scale-factor));
-    max-font-size: calc(72px * var(--scale-factor));
+    font-size: calc(3.4vw * var(--clamped-scale));
+    min-font-size: calc(36px * var(--clamped-scale));
+    max-font-size: calc(72px * var(--clamped-scale));
 }
 
 .title-line-2 {
-    font-size: calc(1.5vw * var(--scale-factor));
+    font-size: calc(1.5vw * var(--clamped-scale));
     font-weight: 400;
-    letter-spacing: calc(0.5vw * var(--scale-factor));
-    margin-left: calc(1.25vw * var(--scale-factor));
-    min-font-size: calc(16px * var(--scale-factor));
-    max-font-size: calc(32px * var(--scale-factor));
+    letter-spacing: calc(0.5vw * var(--clamped-scale));
+    margin-left: calc(1.25vw * var(--clamped-scale));
+    min-font-size: calc(16px * var(--clamped-scale));
+    max-font-size: calc(32px * var(--clamped-scale));
 }
 
 .subtitle-brackets {
     font-family: 'Space Mono', monospace;
-    font-size: calc(0.9vw * var(--scale-factor));
+    font-size: calc(0.9vw * var(--clamped-scale));
     color: #cccccc;
-    margin-bottom: calc(0.6vh * var(--scale-factor));
-    letter-spacing: calc(0.06vw * var(--scale-factor));
-    min-font-size: calc(10px * var(--scale-factor));
-    max-font-size: calc(18px * var(--scale-factor));
+    margin-bottom: calc(0.6vh * var(--clamped-scale));
+    letter-spacing: calc(0.06vw * var(--clamped-scale));
+    min-font-size: calc(10px * var(--clamped-scale));
+    max-font-size: calc(18px * var(--clamped-scale));
 }
 
 .subtitle-italic {
-    font-size: calc(1vw * var(--scale-factor));
+    font-size: calc(1vw * var(--clamped-scale));
     font-style: italic;
     color: #cccccc;
     font-weight: 300;
-    min-font-size: calc(12px * var(--scale-factor));
-    max-font-size: calc(20px * var(--scale-factor));
+    min-font-size: calc(12px * var(--clamped-scale));
+    max-font-size: calc(20px * var(--clamped-scale));
 }

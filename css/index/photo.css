@@ -1,23 +1,18 @@
 /* Photo Elements */
 .photo-left,
 .photo-right {
-    position: relative;
+    position: absolute;
     z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .photo-left {
-    grid-area: bottom-left;
-    justify-self: start;
-    align-self: end;
+    bottom: calc(-3% * var(--clamped-scale));
+    left: calc(8% * var(--clamped-scale));
 }
 
 .photo-right {
-    grid-area: bottom-right;
-    justify-self: end;
-    align-self: end;
+    bottom: calc(15% * var(--clamped-scale));
+    right: calc(8% * var(--clamped-scale));
 }
 
 .torn-photo {
@@ -28,21 +23,21 @@
 }
 
 .photo-right .torn-photo {
-    width: calc(22vw * var(--scale-factor));
-    height: calc(16vw * var(--scale-factor));
-    min-width: calc(300px * var(--scale-factor));
-    min-height: calc(220px * var(--scale-factor));
-    max-width: calc(450px * var(--scale-factor));
-    max-height: calc(330px * var(--scale-factor));
+    width: calc(22vw * var(--clamped-scale));
+    height: calc(16vw * var(--clamped-scale));
+    min-width: calc(300px * var(--clamped-scale));
+    min-height: calc(220px * var(--clamped-scale));
+    max-width: calc(450px * var(--clamped-scale));
+    max-height: calc(330px * var(--clamped-scale));
 }
 
 .photo-left .torn-photo {
-    width: calc(28vw * var(--scale-factor));
-    height: calc(20vw * var(--scale-factor));
-    min-width: calc(400px * var(--scale-factor));
-    min-height: calc(280px * var(--scale-factor));
-    max-width: calc(550px * var(--scale-factor));
-    max-height: calc(400px * var(--scale-factor));
+    width: calc(28vw * var(--clamped-scale));
+    height: calc(20vw * var(--clamped-scale));
+    min-width: calc(400px * var(--clamped-scale));
+    min-height: calc(280px * var(--clamped-scale));
+    max-width: calc(550px * var(--clamped-scale));
+    max-height: calc(400px * var(--clamped-scale));
 }
 
 .torn-photo::after {
@@ -58,13 +53,13 @@
 .photo-left .torn-photo::after {
     background-image: url('../../images/background/left.png');
     transform: rotate(180deg);
-    inset: calc(-150px * var(--scale-factor));
+    inset: calc(-150px * var(--clamped-scale));
 }
 
 .photo-right .torn-photo::after {
     background-image: url('../../images/background/right.png');
     transform: rotate(3deg);
-    inset: calc(-80px * var(--scale-factor));
+    inset: calc(-80px * var(--clamped-scale));
 }
 
 .photo-1 { --photo-rotation: -8deg; }
@@ -80,16 +75,16 @@
 
 /* Left photo content */
 .photo-left .photo-content {
-    inset: calc(-70px * var(--scale-factor));
-    width: calc(100% + 130px * var(--scale-factor));
-    height: calc(100% + 130px * var(--scale-factor));
+    inset: calc(-70px * var(--clamped-scale));
+    width: calc(100% + 130px * var(--clamped-scale));
+    height: calc(100% + 130px * var(--clamped-scale));
 }
 
 /* Right photo content - bigger */
 .photo-right .photo-content {
-    inset: calc(-30px * var(--scale-factor));
-    width: calc(100% + 60px * var(--scale-factor));
-    height: calc(100% + 60px * var(--scale-factor));
+    inset: calc(-30px * var(--clamped-scale));
+    width: calc(100% + 60px * var(--clamped-scale));
+    height: calc(100% + 60px * var(--clamped-scale));
 }
 
 .rotating-image {
