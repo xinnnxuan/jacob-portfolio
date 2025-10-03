@@ -1,18 +1,23 @@
 /* Photo Elements */
 .photo-left,
 .photo-right {
-    position: absolute;
+    position: relative;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .photo-left {
-    bottom: 50px;
-    left: 100px;
+    grid-area: bottom-left;
+    justify-self: start;
+    align-self: end;
 }
 
 .photo-right {
-    bottom: 200px;
-    right: 100px;
+    grid-area: bottom-right;
+    justify-self: end;
+    align-self: end;
 }
 
 .torn-photo {
@@ -23,13 +28,21 @@
 }
 
 .photo-right .torn-photo {
-    width: 400px;
-    height: 300px;
+    width: calc(22vw * var(--scale-factor));
+    height: calc(16vw * var(--scale-factor));
+    min-width: calc(300px * var(--scale-factor));
+    min-height: calc(220px * var(--scale-factor));
+    max-width: calc(450px * var(--scale-factor));
+    max-height: calc(330px * var(--scale-factor));
 }
 
 .photo-left .torn-photo {
-    width: 500px;
-    height: 360px;
+    width: calc(28vw * var(--scale-factor));
+    height: calc(20vw * var(--scale-factor));
+    min-width: calc(400px * var(--scale-factor));
+    min-height: calc(280px * var(--scale-factor));
+    max-width: calc(550px * var(--scale-factor));
+    max-height: calc(400px * var(--scale-factor));
 }
 
 .torn-photo::after {
@@ -45,13 +58,13 @@
 .photo-left .torn-photo::after {
     background-image: url('../../images/background/left.png');
     transform: rotate(180deg);
-    inset: -150px;
+    inset: calc(-150px * var(--scale-factor));
 }
 
 .photo-right .torn-photo::after {
     background-image: url('../../images/background/right.png');
     transform: rotate(3deg);
-    inset: -80px;
+    inset: calc(-80px * var(--scale-factor));
 }
 
 .photo-1 { --photo-rotation: -8deg; }
@@ -67,16 +80,16 @@
 
 /* Left photo content */
 .photo-left .photo-content {
-    inset: -70px;
-    width: calc(100% + 130px);
-    height: calc(100% + 130px);
+    inset: calc(-70px * var(--scale-factor));
+    width: calc(100% + 130px * var(--scale-factor));
+    height: calc(100% + 130px * var(--scale-factor));
 }
 
 /* Right photo content - bigger */
 .photo-right .photo-content {
-    inset: -30px;
-    width: calc(100% + 60px);
-    height: calc(100% + 60px);
+    inset: calc(-30px * var(--scale-factor));
+    width: calc(100% + 60px * var(--scale-factor));
+    height: calc(100% + 60px * var(--scale-factor));
 }
 
 .rotating-image {

@@ -19,6 +19,21 @@ body {
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>'), auto;
 }
 
+/* Responsive scaling variables */
+:root {
+    --scale-factor: 1;
+    --base-font-size: 16px;
+}
+
+/* Responsive scaling for different screen sizes */
+@media (max-width: 1920px) { :root { --scale-factor: 0.9; } }
+@media (max-width: 1600px) { :root { --scale-factor: 0.8; } }
+@media (max-width: 1366px) { :root { --scale-factor: 0.7; } }
+@media (max-width: 1024px) { :root { --scale-factor: 0.6; } }
+@media (max-width: 768px) { :root { --scale-factor: 0.5; } }
+@media (max-width: 480px) { :root { --scale-factor: 0.4; } }
+@media (max-width: 320px) { :root { --scale-factor: 0.35; } }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;

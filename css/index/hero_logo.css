@@ -3,39 +3,49 @@
 }
 
 .title-line-1 {
-    font-size: 72px;
+    font-size: calc(4.5vw * var(--scale-factor));
     font-weight: 900;
-    letter-spacing: 5px;
+    letter-spacing: calc(0.3vw * var(--scale-factor));
     line-height: 0.8;
     position: relative;
+    min-font-size: calc(48px * var(--scale-factor));
+    max-font-size: calc(96px * var(--scale-factor));
 }
 
 .title-line-1::after {
     content: '⚡';
     position: absolute;
-    right: -40px;
+    right: calc(-2.5vw * var(--scale-factor));
     top: 0;
-    font-size: 54px;
+    font-size: calc(3.4vw * var(--scale-factor));
+    min-font-size: calc(36px * var(--scale-factor));
+    max-font-size: calc(72px * var(--scale-factor));
 }
 
 .title-line-2 {
-    font-size: 24px;
+    font-size: calc(1.5vw * var(--scale-factor));
     font-weight: 400;
-    letter-spacing: 8px;
-    margin-left: 20px;
+    letter-spacing: calc(0.5vw * var(--scale-factor));
+    margin-left: calc(1.25vw * var(--scale-factor));
+    min-font-size: calc(16px * var(--scale-factor));
+    max-font-size: calc(32px * var(--scale-factor));
 }
 
 .subtitle-brackets {
     font-family: 'Space Mono', monospace;
-    font-size: 14px;
+    font-size: calc(0.9vw * var(--scale-factor));
     color: #cccccc;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+    margin-bottom: calc(0.6vh * var(--scale-factor));
+    letter-spacing: calc(0.06vw * var(--scale-factor));
+    min-font-size: calc(10px * var(--scale-factor));
+    max-font-size: calc(18px * var(--scale-factor));
 }
 
 .subtitle-italic {
-    font-size: 16px;
+    font-size: calc(1vw * var(--scale-factor));
     font-style: italic;
     color: #cccccc;
     font-weight: 300;
+    min-font-size: calc(12px * var(--scale-factor));
+    max-font-size: calc(20px * var(--scale-factor));
 }
