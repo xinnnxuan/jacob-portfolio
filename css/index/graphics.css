@@ -61,18 +61,19 @@
 
 .graphic-3 {
     --graphic-rotation: -5deg;
-    bottom: 30%;
-    left: 20%;
+    top: 10%;
+    right: 10%;
     width: clamp(14.07vw, 14.63vw, 25.01vw);
     height: clamp(10.16vw, 10.8vw, 18.75vw);
 }
 
 .graphic-6 {
     --graphic-rotation: 6deg;
-    top: 55%;
-    left: 35%;
-    width: clamp(10.94vw, 11.93vw, 20.33vw);
-    height: clamp(7.82vw, 8.55vw, 14.85vw);
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) rotate(var(--graphic-rotation));
+    width: clamp(20vw, 25vw, 35vw);
+    height: clamp(15vw, 18.75vw, 26.25vw);
 }
 
 .graphic-7 {
@@ -177,9 +178,14 @@
 
 /* Responsive Graphics - All Graphics */
 @media (max-width: 1024px) {
-    .graphic-2, .graphic-3, .graphic-6, .graphic-7, .graphic-8, .graphic-9, .graphic-10, .graphic-11 {
+    .graphic-2, .graphic-3, .graphic-7, .graphic-8, .graphic-9, .graphic-10, .graphic-11 {
         width: clamp(90px, 9vw, 225px);
         height: clamp(68px, 6.75vw, 170px);
+    }
+    
+    .graphic-6 {
+        width: clamp(150px, 15vw, 300px);
+        height: clamp(113px, 11.25vw, 225px);
     }
 }
 
@@ -192,13 +198,21 @@
     }
     
     .graphic-3 {
-        bottom: 20%;
-        left: 20%;
+        top: 15%;
+        right: 8%;
         width: clamp(90px, 18vw, 203px);
         height: clamp(68px, 13.5vw, 158px);
     }
     
-    .graphic-6, .graphic-7, .graphic-8, .graphic-9, .graphic-10, .graphic-11 {
+    .graphic-6 {
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%) rotate(var(--graphic-rotation));
+        width: clamp(120px, 24vw, 240px);
+        height: clamp(90px, 18vw, 180px);
+    }
+    
+    .graphic-7, .graphic-8, .graphic-9, .graphic-10, .graphic-11 {
         width: clamp(68px, 13.5vw, 158px);
         height: clamp(50px, 10.13vw, 125px);
     }
@@ -213,13 +227,21 @@
     }
     
     .graphic-3 {
-        bottom: 15%;
-        left: 15%;
+        top: 12%;
+        right: 5%;
         width: clamp(68px, 22.5vw, 158px);
         height: clamp(50px, 16.88vw, 125px);
     }
     
-    .graphic-6, .graphic-7, .graphic-8, .graphic-9, .graphic-10, .graphic-11 {
+    .graphic-6 {
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%) rotate(var(--graphic-rotation));
+        width: clamp(90px, 30vw, 180px);
+        height: clamp(68px, 22.5vw, 135px);
+    }
+    
+    .graphic-7, .graphic-8, .graphic-9, .graphic-10, .graphic-11 {
         width: clamp(45px, 18vw, 113px);
         height: clamp(35px, 13.5vw, 90px);
     }
