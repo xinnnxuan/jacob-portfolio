@@ -62,7 +62,7 @@
 .graphic-3 {
     --graphic-rotation: -5deg;
     top: 10%;
-    right: 10%;
+    right: 25%;
     width: clamp(14.07vw, 14.63vw, 25.01vw);
     height: clamp(10.16vw, 10.8vw, 18.75vw);
 }
@@ -199,7 +199,7 @@
     
     .graphic-3 {
         top: 15%;
-        right: 8%;
+        right: 20%;
         width: clamp(90px, 18vw, 203px);
         height: clamp(68px, 13.5vw, 158px);
     }
@@ -228,7 +228,7 @@
     
     .graphic-3 {
         top: 12%;
-        right: 5%;
+        right: 15%;
         width: clamp(68px, 22.5vw, 158px);
         height: clamp(50px, 16.88vw, 125px);
     }
