@@ -1,15 +1,15 @@
 /* Photo Elements */
 .photo-left {
     position: absolute;
-    bottom: 25%;
-    right: 5%;
+    bottom: 25vh;
+    right: 5vw;
     z-index: 10;
 }
 
 .photo-right {
     position: absolute;
-    bottom: -5%;
-    left: 15%;
+    bottom: -5vh;
+    left: 15vw;
     z-index: 10;
 }
 
@@ -22,22 +22,22 @@
 
 /* Left photo - smaller (switched from right) */
 .photo-left .torn-photo {
-    width: 15vw;
-    height: 11vw;
+    width: 20vw;
+    height: 15vh;
     min-width: 200px;
     min-height: 150px;
-    max-width: 300px;
-    max-height: 220px;
+    max-width: 400px;
+    max-height: 300px;
 }
 
 /* Right photo - larger (switched from left) */
 .photo-right .torn-photo {
-    width: 20vw;
-    height: 15vw;
+    width: 25vw;
+    height: 18vh;
     min-width: 300px;
     min-height: 200px;
-    max-width: 450px;
-    max-height: 300px;
+    max-width: 500px;
+    max-height: 350px;
 }
 
 /* White backing layer removed */
