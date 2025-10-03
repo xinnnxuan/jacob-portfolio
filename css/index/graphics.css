@@ -72,8 +72,8 @@
     top: 70%;
     left: 50%;
     transform: translateX(-50%) rotate(var(--graphic-rotation));
-    width: clamp(60vw, 75vw, 105vw);
-    height: clamp(45vw, 56.25vw, 78.75vw);
+    width: clamp(40vw, 50vw, 70vw);
+    height: clamp(30vw, 37.5vw, 52.5vw);
 }
 
 .graphic-7 {
@@ -184,8 +184,8 @@
     }
     
     .graphic-6 {
-        width: clamp(450px, 45vw, 900px);
-        height: clamp(339px, 33.75vw, 675px);
+        width: clamp(300px, 30vw, 600px);
+        height: clamp(226px, 22.5vw, 450px);
     }
 }
 
@@ -208,8 +208,8 @@
         top: 65%;
         left: 50%;
         transform: translateX(-50%) rotate(var(--graphic-rotation));
-        width: clamp(360px, 72vw, 720px);
-        height: clamp(270px, 54vw, 540px);
+        width: clamp(240px, 48vw, 480px);
+        height: clamp(180px, 36vw, 360px);
     }
     
     .graphic-7, .graphic-8, .graphic-9, .graphic-10, .graphic-11 {
@@ -237,8 +237,8 @@
         top: 60%;
         left: 50%;
         transform: translateX(-50%) rotate(var(--graphic-rotation));
-        width: clamp(270px, 90vw, 540px);
-        height: clamp(204px, 67.5vw, 405px);
+        width: clamp(180px, 60vw, 360px);
+        height: clamp(136px, 45vw, 270px);
     }
     
     .graphic-7, .graphic-8, .graphic-9, .graphic-10, .graphic-11 {
