@@ -150,6 +150,17 @@
     z-index: 3;
 }
 
+/* Black and white effect for photos */
+.photo-content img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Show original colors on hover */
+.photo-content:hover img {
+    filter: grayscale(0%);
+}
+
 /* Left photo content */
 .photo-left .photo-content {
     inset: -4.86vw;
