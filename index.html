@@ -10,12 +10,63 @@
     <link rel="stylesheet" href="css/index/hero_logo.css">
     <link rel="stylesheet" href="css/index/nav.css">
     <link rel="stylesheet" href="css/index/background.css">
+    <link rel="stylesheet" href="css/index/night-sky.css">
     <link rel="stylesheet" href="css/index/graphics.css">
     <link rel="stylesheet" href="css/index/visuals.css">
     <link rel="stylesheet" href="css/index/photo.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Night Sky Background with Leo Constellation -->
+    <div class="night-sky-overlay">
+        <div class="stars"></div>
+        <svg class="leo-constellation" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+            <!-- Leo constellation lines -->
+            <g class="leo-lines">
+                <!-- Lion's head outline -->
+                <path d="M15,25 Q20,20 25,25 Q30,20 35,25 Q40,20 45,25" />
+                <!-- Lion's mane -->
+                <path d="M20,30 Q15,35 20,40 Q25,45 30,40 Q35,45 40,40 Q45,35 40,30" />
+                <!-- Lion's body -->
+                <path d="M25,45 Q20,50 25,55 Q30,60 35,55 Q40,50 35,45" />
+                <!-- Lion's tail -->
+                <path d="M35,55 Q40,60 45,65 Q50,70 55,65" />
+                <!-- Lion's legs -->
+                <path d="M25,55 L20,65 M30,55 L25,65 M35,55 L40,65 M40,55 L45,65" />
+            </g>
+            
+            <!-- Leo constellation stars -->
+            <g class="leo-stars">
+                <!-- Main stars (Regulus and other bright stars) -->
+                <circle cx="25" cy="25" r="1.5" class="leo-main-stars" />
+                <circle cx="35" cy="30" r="1.2" class="leo-main-stars" />
+                <circle cx="30" cy="40" r="1" class="leo-main-stars" />
+                <circle cx="40" cy="45" r="1.1" class="leo-main-stars" />
+                <circle cx="45" cy="60" r="1" class="leo-main-stars" />
+                
+                <!-- Secondary stars -->
+                <circle cx="20" cy="20" r="0.8" />
+                <circle cx="30" cy="20" r="0.7" />
+                <circle cx="40" cy="20" r="0.6" />
+                <circle cx="15" cy="30" r="0.7" />
+                <circle cx="45" cy="30" r="0.8" />
+                <circle cx="20" cy="40" r="0.6" />
+                <circle cx="50" cy="40" r="0.7" />
+                <circle cx="15" cy="50" r="0.8" />
+                <circle cx="25" cy="50" r="0.6" />
+                <circle cx="35" cy="50" r="0.7" />
+                <circle cx="45" cy="50" r="0.6" />
+                <circle cx="20" cy="60" r="0.7" />
+                <circle cx="30" cy="60" r="0.8" />
+                <circle cx="40" cy="60" r="0.6" />
+                <circle cx="50" cy="60" r="0.7" />
+                <circle cx="25" cy="70" r="0.6" />
+                <circle cx="35" cy="70" r="0.7" />
+                <circle cx="45" cy="70" r="0.8" />
+            </g>
+        </svg>
+    </div>
+
     <!-- Background Elements -->
     <div class="background-elements">
         <div class="stars"></div>
