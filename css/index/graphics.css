@@ -21,22 +21,22 @@
     --graphic-rotation: -15deg;
     top: 25%;
     left: 15%;
-    width: clamp(5.56vw, 6vw, 10.42vw);
-    height: clamp(4.17vw, 4.5vw, 8.33vw);
+    width: clamp(8.34vw, 9vw, 15.63vw);
+    height: clamp(6.26vw, 6.75vw, 12.5vw);
 }
 
 /* Responsive Graphics Sizing */
 @media (max-width: 1024px) {
     .graphic-1 {
-        width: clamp(50px, 5vw, 120px);
-        height: clamp(38px, 3.8vw, 95px);
+        width: clamp(75px, 7.5vw, 180px);
+        height: clamp(57px, 5.7vw, 143px);
     }
 }
 
 @media (max-width: 768px) {
     .graphic-1 {
-        width: clamp(40px, 8vw, 100px);
-        height: clamp(30px, 6vw, 75px);
+        width: clamp(60px, 12vw, 150px);
+        height: clamp(45px, 9vw, 113px);
         top: 20%;
         left: 10%;
     }
@@ -44,8 +44,8 @@
 
 @media (max-width: 480px) {
     .graphic-1 {
-        width: clamp(30px, 10vw, 80px);
-        height: clamp(23px, 7.5vw, 60px);
+        width: clamp(45px, 15vw, 120px);
+        height: clamp(35px, 11.25vw, 90px);
         top: 15%;
         left: 8%;
     }
@@ -55,64 +55,64 @@
     --graphic-rotation: 8deg;
     top: 35%;
     right: 20%;
-    width: clamp(4.86vw, 5.5vw, 9.72vw);
-    height: clamp(3.47vw, 4vw, 6.94vw);
+    width: clamp(7.29vw, 8.25vw, 14.58vw);
+    height: clamp(5.21vw, 6vw, 10.41vw);
 }
 
 .graphic-3 {
     --graphic-rotation: -5deg;
     bottom: 25%;
     left: 25%;
-    width: clamp(6.25vw, 6.5vw, 11.11vw);
-    height: clamp(4.51vw, 4.8vw, 8.33vw);
+    width: clamp(9.38vw, 9.75vw, 16.67vw);
+    height: clamp(6.77vw, 7.2vw, 12.5vw);
 }
 
 .graphic-6 {
     --graphic-rotation: 6deg;
     top: 60%;
     left: 40%;
-    width: clamp(4.86vw, 5.3vw, 9.03vw);
-    height: clamp(3.47vw, 3.8vw, 6.60vw);
+    width: clamp(7.29vw, 7.95vw, 13.55vw);
+    height: clamp(5.21vw, 5.7vw, 9.9vw);
 }
 
 .graphic-7 {
     --graphic-rotation: -12deg;
     top: 45%;
     left: 5%;
-    width: clamp(6.94vw, 7vw, 12.5vw);
-    height: clamp(4.86vw, 5vw, 9.03vw);
+    width: clamp(10.41vw, 10.5vw, 18.75vw);
+    height: clamp(7.29vw, 7.5vw, 13.55vw);
 }
 
 .graphic-8 {
     --graphic-rotation: 15deg;
     bottom: 15%;
     left: 60%;
-    width: clamp(5.56vw, 5.8vw, 10.42vw);
-    height: clamp(4.17vw, 4.3vw, 7.64vw);
+    width: clamp(8.34vw, 8.7vw, 15.63vw);
+    height: clamp(6.26vw, 6.45vw, 11.46vw);
 }
 
 .graphic-9 {
     --graphic-rotation: -6deg;
     top: 70%;
     right: 30%;
-    width: clamp(5.90vw, 6.3vw, 11.11vw);
-    height: clamp(4.17vw, 4.5vw, 7.99vw);
+    width: clamp(8.85vw, 9.45vw, 16.67vw);
+    height: clamp(6.26vw, 6.75vw, 11.99vw);
 }
 
 .graphic-10 {
     --graphic-rotation: 9deg;
     top: 5%;
     left: 30%;
-    width: clamp(4.17vw, 5vw, 8.33vw);
-    height: clamp(2.78vw, 3.5vw, 5.90vw);
+    width: clamp(6.26vw, 7.5vw, 12.5vw);
+    height: clamp(4.17vw, 5.25vw, 8.85vw);
 }
 
 .graphic-11 {
     --graphic-rotation: -18deg;
     bottom: 5%;
     right: 5%;
-    width: clamp(6.25vw, 6.8vw, 11.81vw);
-    height: clamp(4.51vw, 5vw, 8.68vw);
+    width: clamp(9.38vw, 10.2vw, 17.72vw);
+    height: clamp(6.77vw, 7.5vw, 13.02vw);
 }
 
 /* White backing layer removed */
@@ -178,8 +178,8 @@
 /* Responsive Graphics - All Graphics */
 @media (max-width: 1024px) {
     .graphic-2, .graphic-3, .graphic-6, .graphic-7, .graphic-8, .graphic-9, .graphic-10, .graphic-11 {
-        width: clamp(40px, 4vw, 100px);
-        height: clamp(30px, 3vw, 75px);
+        width: clamp(60px, 6vw, 150px);
+        height: clamp(45px, 4.5vw, 113px);
     }
 }
 
@@ -187,20 +187,20 @@
     .graphic-2 {
         top: 30%;
         right: 15%;
-        width: clamp(35px, 7vw, 80px);
-        height: clamp(25px, 5vw, 60px);
+        width: clamp(53px, 10.5vw, 120px);
+        height: clamp(38px, 7.5vw, 90px);
     }
     
     .graphic-3 {
         bottom: 20%;
         left: 20%;
-        width: clamp(40px, 8vw, 90px);
-        height: clamp(30px, 6vw, 70px);
+        width: clamp(60px, 12vw, 135px);
+        height: clamp(45px, 9vw, 105px);
     }
     
     .graphic-6, .graphic-7, .graphic-8, .graphic-9, .graphic-10, .graphic-11 {
-        width: clamp(30px, 6vw, 70px);
-        height: clamp(22px, 4.5vw, 55px);
+        width: clamp(45px, 9vw, 105px);
+        height: clamp(33px, 6.75vw, 83px);
     }
 }
 
@@ -208,19 +208,19 @@
     .graphic-2 {
         top: 25%;
         right: 10%;
-        width: clamp(25px, 8vw, 60px);
-        height: clamp(18px, 6vw, 45px);
+        width: clamp(38px, 12vw, 90px);
+        height: clamp(27px, 9vw, 68px);
     }
     
     .graphic-3 {
         bottom: 15%;
         left: 15%;
-        width: clamp(30px, 10vw, 70px);
-        height: clamp(22px, 7.5vw, 55px);
+        width: clamp(45px, 15vw, 105px);
+        height: clamp(33px, 11.25vw, 83px);
     }
     
     .graphic-6, .graphic-7, .graphic-8, .graphic-9, .graphic-10, .graphic-11 {
-        width: clamp(20px, 8vw, 50px);
-        height: clamp(15px, 6vw, 40px);
+        width: clamp(30px, 12vw, 75px);
+        height: clamp(23px, 9vw, 60px);
     }
 }
