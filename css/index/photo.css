@@ -22,14 +22,22 @@
 
 /* Left photo - smaller (switched from right) */
 .photo-left .torn-photo {
-    width: 250px;
-    height: 180px;
+    width: 15vw;
+    height: 11vw;
+    min-width: 200px;
+    min-height: 150px;
+    max-width: 300px;
+    max-height: 220px;
 }
 
 /* Right photo - larger (switched from left) */
 .photo-right .torn-photo {
-    width: 400px;
-    height: 240px;
+    width: 20vw;
+    height: 15vw;
+    min-width: 300px;
+    min-height: 200px;
+    max-width: 450px;
+    max-height: 300px;
 }
 
 /* White backing layer removed */

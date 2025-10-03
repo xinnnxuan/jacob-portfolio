@@ -1,6 +1,10 @@
 .film-camera {
-    width: 60px;
-    height: 40px;
+    width: 3vw;
+    height: 2vw;
+    min-width: 40px;
+    min-height: 25px;
+    max-width: 80px;
+    max-height: 55px;
     background: #ffffff;
     border-radius: 8px;
     position: relative;
@@ -35,23 +39,35 @@
 }
 
 .handle {
-    width: 30px;
-    height: 8px;
+    width: 1.5vw;
+    height: 0.4vw;
+    min-width: 20px;
+    min-height: 5px;
+    max-width: 40px;
+    max-height: 12px;
     background: #ffffff;
     border-radius: 4px;
     position: relative;
 }
 
 .chain {
-    width: 2px;
-    height: 20px;
+    width: 0.1vw;
+    height: 1vw;
+    min-width: 1px;
+    min-height: 15px;
+    max-width: 3px;
+    max-height: 25px;
     background: #ffffff;
-    margin: 5px auto;
+    margin: 0.25vw auto;
 }
 
 .spiked-ball {
-    width: 20px;
-    height: 20px;
+    width: 1vw;
+    height: 1vw;
+    min-width: 15px;
+    min-height: 15px;
+    max-width: 25px;
+    max-height: 25px;
     background: #ffffff;
     border-radius: 50%;
     position: relative;
